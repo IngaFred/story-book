@@ -1,6 +1,12 @@
-import styles from './index.module.scss';
 import React from 'react';
+import Header from '../../components/header';
+import styles from './index.module.scss';
 
 export default function Home() {
-  return <div>index</div>;
+  return (
+    <div>
+      <Header />
+      index222
+    </div>
+  );
 }
