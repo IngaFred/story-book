@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 :root {
   --header-height: 100px;
 }
@@ -12,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f7f7f7;
+  background-color: var(--background-color);
   position: fixed;
 }
 
