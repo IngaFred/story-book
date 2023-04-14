@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './utils/rem';
-// 自定义的assets下自己配置的全局样式
 import './assets/styles/reset.scss';
+import { Suspense } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import router from './router/index';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+	document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<Suspense>
+			<RouterProvider router={router} />
+		</Suspense>
+	</React.StrictMode>
 );
 
 reportWebVitals();
