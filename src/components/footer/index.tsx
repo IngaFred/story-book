@@ -11,11 +11,11 @@ export interface FooterProps {}
  * @returns
  */
 function Header(props: FooterProps) {
-  interface Footer {
-    name: string;
-    icon: any;
-    path: string;
-  }
+	interface Footer {
+		name: string;
+		icon: any;
+		path: string;
+	}
 	const footers: Footer[] = [
 		{
 			name: '聊天',
@@ -30,18 +30,18 @@ function Header(props: FooterProps) {
 		{
 			name: '地图',
 			icon: <StarFill fontSize={24} />,
-			path: '/chapters',
+			path: '/home',
 		},
 		{
-			name: '我',
+			name: '角色',
 			icon: <SmileFill fontSize={24} />,
 			path: '/charactersSelection',
 		},
 	];
-  const navigate = useNavigate();
+	const navigate = useNavigate();
 	const handleFooter = (path: string) => {
-    navigate(path)
-  };
+		navigate(path);
+	};
 	return (
 		<div className={styles.empty_block}>
 			<div className={styles.footer}>
