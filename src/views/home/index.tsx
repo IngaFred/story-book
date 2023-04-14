@@ -4,9 +4,9 @@ import styles from './index.module.scss';
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      index222
+    <div className={styles.home}>
+      <Header title="银子那些事儿-第一章" />
+      <div className={styles.body}>index222</div>
     </div>
   );
 }

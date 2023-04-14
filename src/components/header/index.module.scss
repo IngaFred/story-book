@@ -1,11 +1,21 @@
+:root {
+  --header-height: 100px;
+}
+
+.empty_block {
+  height: var(--header-height);
+}
+
 .header {
   width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  position: fixed;
 }
 
 .title {
-  font-size: 20px;
-}
-.title2 {
-  font-size: 20px;
-  width: 750px;
+  font-size: 32px;
 }
