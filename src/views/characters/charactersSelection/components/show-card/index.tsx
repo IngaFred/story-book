@@ -54,10 +54,10 @@ function ShowCard() {
 			{charactersList.map((item, index) => {
 				return (
 					<div key={index}>
-						<div onClick={() => handleFooter(item)}>
+						<div onClick={() => handleFooter(item)} className={styles.one}>
 							<Image src={item.url} fit='fill' />
 							<span className={styles.span}>{item.name}</span>
-							<div className={styles.infos}>{item.introduction}</div>
+							{/* <div className={styles.infos}>{item.introduction}</div> */}
 						</div>
 					</div>
 				)

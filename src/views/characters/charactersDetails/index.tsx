@@ -7,10 +7,6 @@ import { useLocation } from 'react-router-dom';
 import type { characters } from '../charactersSelection/components/show-card';
 
 export default function index() {
-  const location = useLocation();
-  const character: characters = location?.state?.character || null;
-  console.log(character);
-
   return (
     <div className={styles.home}>
       <Header title='角色详情' />
