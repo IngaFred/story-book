@@ -7,7 +7,7 @@ import ItemDetail from './components/item-detail';
 export default function index() {
   return (
     <div className={styles.home}>
-      <Header title="银子那些事儿 物品栏" />
+      <Header title="物品详情" />
       <ItemDetail />
       <Footer />
     </div>
