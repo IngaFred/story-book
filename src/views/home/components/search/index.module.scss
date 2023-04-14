@@ -1,0 +1,19 @@
+@import '../../../../assets/styles/variables.scss';
+
+.search {
+  color: var(--desc-color);
+  display: flex;
+  padding: 8px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.input {
+  margin-left: 20px;
+  font-size: 32px;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+}
