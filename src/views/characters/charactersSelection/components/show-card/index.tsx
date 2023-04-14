@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import { Card, Grid, Image } from 'antd-mobile';
+import { Grid, Image } from 'antd-mobile';
 import A from '../../../../../assets/images/characters/布脱脱.jpg';
 
 import B from '../../../../../assets/images/characters/廖不到.jpg';
@@ -12,7 +12,7 @@ import index from '../..';
 import Item from 'antd-mobile/es/components/dropdown/item';
 import { useNavigate } from 'react-router-dom';
 
-interface characters {
+export interface characters {
 	name: string,
 	url: string,
 	introduction: string,
@@ -46,7 +46,7 @@ const charactersList: characters[] = [
 function ShowCard() {
 	const navigate = useNavigate();
 	const handleFooter = (selectCharacter: characters) => {
-		navigate('charactersDetails', {state: {character: selectCharacter}});
+		navigate('/charactersDetails', {state: {character: selectCharacter}});
 	}
 	return (
 		<div className={styles.all}>

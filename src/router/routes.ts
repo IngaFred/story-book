@@ -33,7 +33,7 @@ export const routes: RouteObject[] = [
 		element: React.createElement(Book),
 	},
 	{
-		path: '/charactersDetails',
+		path: 'charactersDetails',
 		// element: <CharactersDetails />,
 		element: React.createElement(CharactersDetails),
 	},
@@ -41,6 +41,7 @@ export const routes: RouteObject[] = [
 		path: '/charactersSelection',
 		// element: <CharactersSelection />,
 		element: React.createElement(CharactersSelection),
+		// children:[]
 	},
 	{
 		path: '/chapters',
