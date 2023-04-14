@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables.scss';
+
+:root {
+  --footer-height: 100px;
+}
+
+.empty_block {
+  height: var(--footer-height);
+  padding: 20px 0 20px;
+}
+
+.footer {
+  z-index: 100;
+  width: 100%;
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  position: fixed;
+  bottom: 0;
+  padding: 20px 0 20px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}

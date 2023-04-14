@@ -1,0 +1,26 @@
+@import '../../../../assets/styles/variables.scss';
+
+.chat_list {
+}
+.list_item + .list_item {
+  border-top: 1px solid #eee;
+}
+.head_img {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+.name {
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+}
+.right {
+  padding: 10px;
+  min-width: 100px;
+}
+.infos {
+  text-align: start;
+}
