@@ -8,8 +8,6 @@ import B from '../../../../../assets/images/characters/廖不到.jpg';
 import C from '../../../../../assets/images/characters/扈扈.jpg';
 
 import D from '../../../../../assets/images/characters/胡软.jpg';
-import index from '../..';
-import Item from 'antd-mobile/es/components/dropdown/item';
 import { useNavigate } from 'react-router-dom';
 
 export interface characters {

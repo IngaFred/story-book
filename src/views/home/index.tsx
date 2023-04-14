@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       {/* 头部 */}
-      <Header title="银子那些事儿-第一章" />
+      <Header title="银子那些事儿 第一章" />
       {/* 搜索框 */}
       <Search />
       {/* 聊天列表 */}
