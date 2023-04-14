@@ -5,17 +5,15 @@ import './utils/rem';
 import './assets/styles/reset.scss';
 import { Suspense } from 'react';
 import { RouterProvider } from 'react-router-dom';
-import router from './router/index';
+import router from './router';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 root.render(
-	<React.StrictMode>
-		<Suspense>
-			<RouterProvider router={router} />
-		</Suspense>
-	</React.StrictMode>
+	<Suspense>
+		<RouterProvider router={router} />
+	</Suspense>
 );
 
 reportWebVitals();

@@ -1,6 +1,6 @@
+import React from 'react';
 import { lazy } from 'react';
-import Home from '../views/home'
-// const Home = lazy(() => import('../views/home'));
+const Home = lazy(() => import('../views/home'));
 const Book = lazy(() => import('../views/books'));
 const CharactersDetails = lazy(
 	() => import('../views/characters/charactersDetails')
@@ -19,43 +19,53 @@ import { Navigate } from 'react-router-dom';
 export const routes: RouteObject[] = [
 	{
 		path: '/',
-		element: <Navigate to="/home" />,
+		// element: <Navigate to="/home" />,
+		element: React.createElement(Navigate, {to: '/home'}),
 	},
 	{
 		path: '/home',
-		element: <Home />,
+		// element: <Home />,
+		element: React.createElement(Home),
 	},
 	{
 		path: '/book',
-		element: <Book />,
+		// element: <Book />,
+		element: React.createElement(Book),
 	},
 	{
 		path: '/charactersDetails',
-		element: <CharactersDetails />,
+		// element: <CharactersDetails />,
+		element: React.createElement(CharactersDetails),
 	},
 	{
 		path: '/charactersSelection',
-		element: <CharactersSelection />,
+		// element: <CharactersSelection />,
+		element: React.createElement(CharactersSelection),
 	},
 	{
 		path: '/chapters',
-		element: <Chapters />,
+		// element: <Chapters />,
+		element: React.createElement(Chapters),
 	},
 	{
 		path: '/storyline',
-		element: <Storyline />,
+		// element: <Storyline />,
+		element: React.createElement(Storyline),
 	},
 	{
 		path: '/itemBars',
-		element: <ItemBars />,
+		// element: <ItemBars />,
+		element: React.createElement(ItemBars),
 	},
 	{
 		path: '/itemDetails',
-		element: <ItemDetails />,
+		// element: <ItemDetails />,
+		element: React.createElement(ItemDetails),
 	},
 	{
 		path: '/chat',
-		element: <Chat />,
+		// element: <Chat />,
+		element: React.createElement(Chat),
 	},
 ];
 
