@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './utils/rem';
 // 自定义的assets下自己配置的全局样式
 import './assets/styles/reset.scss';
 
