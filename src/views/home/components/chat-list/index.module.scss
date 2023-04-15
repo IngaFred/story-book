@@ -1,6 +1,7 @@
 @import '../../../../assets/styles/variables.scss';
 
 .chat_list {
+  margin: 20px;
 }
 .list_item + .list_item {
   border-top: 1px solid #eee;
