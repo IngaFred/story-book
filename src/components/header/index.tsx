@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import ListItem from '../list-item';
 import styles from './index.module.scss';
 
@@ -11,9 +12,22 @@ export interface HeaderProps {
  * @returns
  */
 function Header({ title }: HeaderProps) {
+  const navigate = useNavigate();
   return (
     <div className={styles.empty_block}>
-      <ListItem left={'<'} right={'...'} className={styles.header}>
+      <ListItem
+        left={
+          <span
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
+            {'<'}
+          </span>
+        }
+        right={'...'}
+        className={styles.header}
+      >
         <div className={styles.title}>{title}</div>
       </ListItem>
     </div>
