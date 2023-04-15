@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './index.module.scss';
+import { useNavigate } from 'react-router-dom';
 import ListItem from '../../../../components/list-item';
+import styles from './index.module.scss';
 
 const areaList = [
   '城里',
@@ -18,6 +19,7 @@ const areaList = [
  * 聊天列表
  */
 function ChatList() {
+  const navigate = useNavigate();
   return (
     <div className={styles.chat_list}>
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
@@ -27,6 +29,9 @@ function ChatList() {
           const area = areaList[unread % 10];
           return (
             <ListItem
+              onClick={() => {
+                navigate(`/chat?id=${item}`);
+              }}
               className={styles.list_item}
               left={
                 <img

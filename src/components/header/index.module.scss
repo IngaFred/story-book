@@ -9,6 +9,7 @@
 }
 
 .header {
+  box-sizing: border-box;
   z-index: 100;
   width: 100%;
   height: var(--header-height);
@@ -17,8 +18,11 @@
   justify-content: center;
   background-color: var(--background-color);
   position: fixed;
+  font-size: 48px;
+  padding: 0 20px;
 }
 
 .title {
+  text-align: center;
   font-size: 32px;
 }
