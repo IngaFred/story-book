@@ -19,54 +19,43 @@ const Chat = lazy(() => import('../views/chat'));
 export const routes: RouteObject[] = [
 	{
 		path: '/',
-		// element: <Navigate to="/home" />,
-		element: React.createElement(Navigate, {to: '/home'}),
+		element: <Navigate to="/home" />,
 	},
 	{
 		path: '/home',
-		// element: <Home />,
-		element: React.createElement(Home),
+		element: <Home />,
 	},
 	{
 		path: '/book',
-		// element: <Book />,
-		element: React.createElement(Book),
+		element: <Book />,
 	},
 	{
 		path: 'charactersDetails',
-		// element: <CharactersDetails />,
-		element: React.createElement(CharactersDetails),
+		element: <CharactersDetails />,
 	},
 	{
 		path: '/charactersSelection',
-		// element: <CharactersSelection />,
-		element: React.createElement(CharactersSelection),
-		// children:[]
+		element: <CharactersSelection />,
 	},
 	{
 		path: '/chapters',
-		// element: <Chapters />,
-		element: React.createElement(Chapters),
+		element: <Chapters />,
 	},
 	{
 		path: '/storyline',
-		// element: <Storyline />,
-		element: React.createElement(Storyline),
+		element: <Storyline />,
 	},
 	{
 		path: '/itemBars',
-		// element: <ItemBars />,
-		element: React.createElement(ItemBars),
+		element: <ItemBars />,
 	},
 	{
 		path: '/itemDetails',
-		// element: <ItemDetails />,
-		element: React.createElement(ItemDetails),
+		element: <ItemDetails />,
 	},
 	{
 		path: '/chat',
-		// element: <Chat />,
-		element: React.createElement(Chat),
+		element: <Chat />,
 	},
 ];
 

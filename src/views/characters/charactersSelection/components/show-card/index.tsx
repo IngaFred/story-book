@@ -10,13 +10,13 @@ import C from '../../../../../assets/images/characters/扈扈.jpg';
 import D from '../../../../../assets/images/characters/胡软.jpg';
 import { useNavigate } from 'react-router-dom';
 
-export interface characters {
+export interface Characters {
 	name: string,
 	url: string,
 	introduction: string,
 }
 
-const charactersList: characters[] = [
+const charactersList: Characters[] = [
 	{
 		name: '布脱脱',
 		url: A,
@@ -43,7 +43,7 @@ const charactersList: characters[] = [
  */
 function ShowCard() {
 	const navigate = useNavigate();
-	const handleFooter = (selectCharacter: characters) => {
+	const handleFooter = (selectCharacter: Characters) => {
 		navigate('/charactersDetails', {state: {character: selectCharacter}});
 	}
 	return (
