@@ -7,10 +7,10 @@ import { useNavigate } from 'react-router-dom';
 export interface FooterProps {}
 
 /**
- * 头部组件
+ * 底部组件
  * @returns
  */
-function Header(props: FooterProps) {
+function Footer(props: FooterProps) {
   interface Footer {
     name: string;
     icon: any;
@@ -60,4 +60,4 @@ function Header(props: FooterProps) {
   );
 }
 
-export default Header;
+export default Footer;

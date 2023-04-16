@@ -1,9 +1,7 @@
 @import '../../assets/styles/variables.scss';
 
-.home {
-  background: var(--background-color);
-}
-.body {
-  height: 2000px;
-  color: var(--desc-color);
+.chat {
+  background: var(--background-color-light);
+  min-height: 100vh;
+  padding: 20px 0;
 }

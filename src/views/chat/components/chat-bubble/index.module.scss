@@ -1,0 +1,51 @@
+@import '../../../../assets/styles/variables.scss';
+
+:root {
+  --arrow-size: 10px;
+  --bubble-color: aquamarine;
+}
+
+.chat_bubble_wrap {
+  display: flex;
+}
+.wrap_left {
+  flex: 1;
+  justify-content: flex-start;
+}
+.wrap_right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.chat_bubble {
+  display: flex;
+  padding: 14px;
+  background-color: var(--bubble-color);
+  position: relative;
+  border-radius: 10px;
+  min-height: 30px;
+  line-height: 30px;
+  min-width: 30px;
+}
+
+.left::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: calc(var(--arrow-size) * -2 + 1px);
+  width: 0;
+  height: 0;
+  border: var(--arrow-size) solid transparent;
+  border-right: var(--arrow-size) solid var(--bubble-color);
+}
+
+.right::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: calc(var(--arrow-size) * -2 + 1px);
+  width: 0;
+  height: 0;
+  border: var(--arrow-size) solid transparent;
+  border-left: var(--arrow-size) solid var(--bubble-color);
+}

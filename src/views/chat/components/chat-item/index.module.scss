@@ -1,0 +1,54 @@
+@import '../../../../assets/styles/variables.scss';
+
+.chat_item {
+  display: flex;
+  align-items: start;
+  color: var(--font-color);
+}
+
+.chat_item_left {
+  padding: 10px;
+}
+
+.head_img {
+  width: 80px;
+  height: 80px;
+  margin: 20px 20px 0;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+
+.empty_block {
+  width: 80px;
+}
+
+.name {
+  display: flex;
+  color: var(--desc-color);
+  font-size: 24px;
+  margin: 4px 0;
+  min-height: 24px;
+}
+
+.name_left {
+  justify-content: flex-start;
+}
+
+.name_right {
+  justify-content: flex-end;
+}
+
+.action {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 4px 80px 4px;
+}
+
+.area_time {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 14px 80px 4px;
+  color: var(--desc-color);
+}
