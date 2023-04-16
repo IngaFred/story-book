@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ListItem from '../../../../components/list-item';
+import ListItem from '@/components/list-item';
 import styles from './index.module.scss';
 
 const areaList = [

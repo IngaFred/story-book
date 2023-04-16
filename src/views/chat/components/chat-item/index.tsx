@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import ListItem from '../../../../components/list-item';
+import ListItem from '@/components/list-item';
 import ChatBubble from '../chat-bubble';
 import styles from './index.module.scss';
 

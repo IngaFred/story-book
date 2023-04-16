@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import styles from './index.module.scss';
-import Header from '../../../components/header';
-import Footer from '../../../components/footer';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 import ItemDetail from './components/item-detail';
 
 export default function index() {
@@ -11,5 +11,5 @@ export default function index() {
       <ItemDetail />
       <Footer />
     </div>
-  )
+  );
 }

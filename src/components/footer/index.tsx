@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from '../list-item';
+import ListItem from '@/components/list-item';
 import styles from './index.module.scss';
 import { MailFill, MessageFill, SmileFill, StarFill } from 'antd-mobile-icons';
 import { useNavigate } from 'react-router-dom';

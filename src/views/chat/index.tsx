@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
-import Header from '../../components/header';
+import Header from '@/components/header';
 import ChatItem, { ChatItemProps } from './components/chat-item';
 import ChatFooter from './components/chat-footer';
 

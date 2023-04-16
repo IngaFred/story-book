@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import styles from './index.module.scss';
-import Header from '../../../components/header';
-import Footer from '../../../components/footer';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 import ItemShow from './components/item-list';
 
 export default function index() {
@@ -11,5 +11,5 @@ export default function index() {
       <ItemShow />
       <Footer />
     </div>
-  )
+  );
 }

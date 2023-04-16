@@ -1,25 +1,25 @@
 import React from 'react';
 import styles from './index.module.scss';
 import { Grid, Image } from 'antd-mobile';
-import A from '../../../../../assets/images/items/1-.jpg';
-import B from '../../../../../assets/images/items/2-.jpg';
-import C from '../../../../../assets/images/items/3-.jpg';
-import D from '../../../../../assets/images/items/4-.jpg';
-import E from '../../../../../assets/images/items/5-.jpg';
-import F from '../../../../../assets/images/items/6-.jpg';
-import G from '../../../../../assets/images/items/7-.jpg';
-import H from '../../../../../assets/images/items/8-.jpg';
-import I from '../../../../../assets/images/items/9-.jpg';
+import A from '@/assets/images/items/1-.jpg';
+import B from '@/assets/images/items/2-.jpg';
+import C from '@/assets/images/items/3-.jpg';
+import D from '@/assets/images/items/4-.jpg';
+import E from '@/assets/images/items/5-.jpg';
+import F from '@/assets/images/items/6-.jpg';
+import G from '@/assets/images/items/7-.jpg';
+import H from '@/assets/images/items/8-.jpg';
+import I from '@/assets/images/items/9-.jpg';
 
-import AD from '../../../../../assets/images/itemDetails/1.jpg';
-import BD from '../../../../../assets/images/itemDetails/2.jpg';
-import CD from '../../../../../assets/images/itemDetails/3.jpg';
-import DD from '../../../../../assets/images/itemDetails/4.jpg';
-import ED from '../../../../../assets/images/itemDetails/5.jpg';
-import FD from '../../../../../assets/images/itemDetails/6.jpg';
-import GD from '../../../../../assets/images/itemDetails/7.jpg';
-import HD from '../../../../../assets/images/itemDetails/8.jpg';
-import ID from '../../../../../assets/images/itemDetails/9.jpg';
+import AD from '@/assets/images/itemDetails/1.jpg';
+import BD from '@/assets/images/itemDetails/2.jpg';
+import CD from '@/assets/images/itemDetails/3.jpg';
+import DD from '@/assets/images/itemDetails/4.jpg';
+import ED from '@/assets/images/itemDetails/5.jpg';
+import FD from '@/assets/images/itemDetails/6.jpg';
+import GD from '@/assets/images/itemDetails/7.jpg';
+import HD from '@/assets/images/itemDetails/8.jpg';
+import ID from '@/assets/images/itemDetails/9.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export interface ItemProps {

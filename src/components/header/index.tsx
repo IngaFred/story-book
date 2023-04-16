@@ -1,6 +1,6 @@
 import React from 'react';
+import ListItem from '@/components/list-item';
 import { useNavigate } from 'react-router-dom';
-import ListItem from '../list-item';
 import styles from './index.module.scss';
 
 export interface HeaderProps {
