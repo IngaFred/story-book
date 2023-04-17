@@ -13,6 +13,7 @@ export interface ChatItemProps {
   area?: string;
   time?: string;
 }
+
 function ChatItem(props: ChatItemProps) {
   const { type = 'chat', info, name, area = '', time = '' } = props;
   if (type === 'action') {

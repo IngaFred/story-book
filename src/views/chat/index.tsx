@@ -6,12 +6,16 @@ import ChatFooter from './components/chat-footer';
 import { useSearchParams } from 'react-router-dom';
 import { useBaseStore } from '@/store';
 import { getActionList } from '@/data/action-list';
+import { getChapter } from '@/data/chapter-list';
+import { getChatList } from '@/data/chat-list';
 
 export default function Chat() {
   const chatRef = useRef(null);
   const [params] = useSearchParams();
   const chatPageList = useBaseStore((state) => state.chatPageList);
   const chapterId = useBaseStore((state) => state.chapterId);
+  const setChapterId = useBaseStore((state) => state.setChapterId);
+  const pushChatPageList = useBaseStore((state) => state.pushChatPageList);
 
   const _index = Number(params?.get?.('index')) || 0;
   const chatPage = chatPageList?.[_index] || {};
@@ -52,28 +56,32 @@ export default function Chat() {
             }, 1500);
           })
             .then(() => {
-              if (item?.chatData?.info === '你好') {
-                pushChatList(_index, {
-                  type: 'chat',
-                  info:
-                    '你好，我是' +
-                    chatPage?.name +
-                    '，请问有什么可以帮到你的吗？',
-                  name: chatPage?.name,
-                });
-              } else {
-                pushChatList(_index, {
-                  type: 'chat',
-                  info: '好的没问题',
-                  name: '羊肉串老板',
-                });
+              if (item?.nextChapterId) {
+                setChapterId(item.nextChapterId);
+                const _chatList = getChatList(
+                  item.contactsId || 1,
+                  item.nextChapterId
+                );
+                // 添加新的聊天人物
+                const newChapter = getChapter(item.nextChapterId);
+                const { addChatPages } = newChapter || {};
+                if (addChatPages) {
+                  pushChatPageList(addChatPages);
+                }
+                // 递归延迟1.5s添加聊天记录
+                const _fun = (_data: ChatItemProps[]) => {
+                  if (!_data?.length) return 1;
+                  // 推送聊天记录
+                  pushChatList(_index, _data[0]);
+                  return new Promise((resolve, reject) => {
+                    scrollToBottom();
+                    setTimeout(() => {
+                      resolve(_fun(_data.slice(1)));
+                    }, 1500);
+                  });
+                };
+                return _fun(_chatList);
               }
-              scrollToBottom();
-              return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                  resolve(1);
-                }, 1500);
-              });
             })
             .then(() => {
               scrollToBottom();
