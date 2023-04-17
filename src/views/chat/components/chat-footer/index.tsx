@@ -4,31 +4,21 @@ import styles from './index.module.scss';
 
 export interface ChatFooterProps {
   [key: string]: any;
+  actionList: ActionItem[];
   onAction?: (info: ActionItem) => void;
 }
 
-interface ActionItem {
+export interface ActionItem {
   info?: string;
   type?: 'disabled' | 'active';
 }
-const actionList: ActionItem[] = [
-  {
-    info: '你已经吃完了，没有什么好和老板聊的了',
-    type: 'disabled',
-  },
-  {
-    info: '我还能吃，再来一份',
-  },
-  {
-    info: '给我打包一份',
-  },
-];
 
 /**
  * 底部组件
  * @returns
  */
 function ChatFooter(props: ChatFooterProps) {
+  const { actionList } = props;
   const [active, setActive] = useState(false);
   const [selectedAction, setSelectedAction] = useState(0);
   return (
@@ -59,7 +49,7 @@ function ChatFooter(props: ChatFooterProps) {
                   onConfirm={() => {
                     setActive(false);
                     if (item.type === 'disabled') return;
-                    props.onAction?.(item);
+                    props?.onAction?.(item);
                   }}
                   onCheck={() => {
                     setSelectedAction(index);

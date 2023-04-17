@@ -13,8 +13,9 @@ export default function Chat() {
   const [params] = useSearchParams();
   const chatPageList = useBaseStore((state) => state.chatPageList);
   const _index = Number(params?.get?.('index')) || 0;
+  const chatPage = chatPageList?.[_index] || {};
   const pushChatList = useBaseStore((state) => state.pushChatList);
-  const chatList: ChatItemProps[] = chatPageList[_index]?.chatList || [];
+  const chatList: ChatItemProps[] = chatPage?.chatList || [];
   const [loading, setLoading] = useState<boolean>(false);
 
   /**
@@ -34,6 +35,7 @@ export default function Chat() {
         return <ChatItem {...item} key={index} />;
       })}
       <ChatFooter
+        actionList={chatPage?.actionList || []}
         onAction={(item) => {
           setLoading(true);
           if (loading) return;
@@ -49,11 +51,22 @@ export default function Chat() {
             }, 1500);
           })
             .then(() => {
-              pushChatList(_index, {
-                type: 'chat',
-                info: '好的没问题',
-                name: '羊肉串老板',
-              });
+              if (item.info === '你好') {
+                pushChatList(_index, {
+                  type: 'chat',
+                  info:
+                    '你好，我是' +
+                    chatPage?.name +
+                    '，请问有什么可以帮到你的吗？',
+                  name: chatPage?.name,
+                });
+              } else {
+                pushChatList(_index, {
+                  type: 'chat',
+                  info: '好的没问题',
+                  name: '羊肉串老板',
+                });
+              }
               scrollToBottom();
               return new Promise((resolve, reject) => {
                 setTimeout(() => {

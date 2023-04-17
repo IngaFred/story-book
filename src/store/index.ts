@@ -1,3 +1,4 @@
+import { ActionItem } from '@views/chat/components/chat-footer';
 import { ChatItemProps } from '@views/chat/components/chat-item';
 import { create } from 'zustand';
 
@@ -16,8 +17,15 @@ import { create } from 'zustand';
 
 export interface ChatPageItem {
   id: number;
+  // 联系人名字
   name?: string;
+  // 地点
   area?: string;
+  // 时间
+  time?: string;
+  // 动作列表
+  actionList?: ActionItem[];
+  // 聊天记录
   chatList?: ChatItemProps[];
 }
 export interface BaseStore {
@@ -42,6 +50,19 @@ export const useBaseStore = create<BaseStore>()((set) => ({
     {
       id: 1,
       name: '主线',
+      area: '街坊小巷',
+      actionList: [
+        {
+          info: '你已经吃完了，没有什么好和老板聊的了',
+          type: 'disabled',
+        },
+        {
+          info: '我还能吃，再来一份',
+        },
+        {
+          info: '给我打包一份',
+        },
+      ],
       chatList: [
         {
           type: 'action',
@@ -114,42 +135,142 @@ export const useBaseStore = create<BaseStore>()((set) => ({
     {
       id: 2,
       name: '城里老板',
+      area: '城里',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 3,
       name: '城外老板',
+      area: '城外',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 4,
       name: '羊肉小摊老板',
+      area: '羊肉小摊',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 5,
       name: '酒馆老板',
+      area: '酒馆',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 6,
       name: '酒楼老板',
+      area: '酒楼',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 7,
       name: '酒吧老板',
+      area: '酒吧',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 8,
       name: '酒店老板',
+      area: '酒店',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 9,
       name: '酒窖老板',
+      area: '酒窖',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 10,
       name: '酒坊老板',
+      area: '酒坊',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
     {
       id: 11,
       name: '酒庄老板',
+      area: '酒庄',
+      actionList: [
+        {
+          info: '你对这里不是很感兴趣',
+          type: 'disabled',
+        },
+        {
+          info: '你好',
+        },
+      ],
     },
   ],
   setState: (e: BaseStore) =>

@@ -17,6 +17,7 @@ function ChatList() {
         const time = new Date().toLocaleTimeString().substring(0, 5);
         return (
           <ListItem
+            key={index}
             onClick={() => {
               navigate(`/chat?index=${index}`);
             }}
