@@ -75,7 +75,7 @@ const chatData: ChatItemProps[] = [
 export default function index() {
   return (
     <div className={styles.chat}>
-      <Header title="银子那些事儿 聊天" />
+      <Header title="羊肉串老板" />
       {chatData.map((item, index) => {
         return <ChatItem {...item} key={index} />;
       })}
