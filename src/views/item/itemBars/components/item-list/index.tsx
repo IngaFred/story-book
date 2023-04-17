@@ -97,7 +97,7 @@ export default function ItemShow() {
 						<>
 							<div key={index}>
 								<div onClick={() => handleFooter(item)} className={styles.one}>
-									<Image src={item.url} fit="fill" className={styles.image} height={170}/>
+									<Image src={item.url} fit="fill" height={'7rem'}/>
 									<span className={styles.span}>{item.name}</span>
 								</div>
 							</div>

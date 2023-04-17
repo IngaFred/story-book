@@ -50,7 +50,7 @@ function Footer(props: FooterProps) {
             <div key={index}>
               <div onClick={() => handleFooter(item.path)}>
                 <div className={styles.img}>{item.icon}</div>
-                <span>{item.name}</span>
+                <span className={styles.text}>{item.name}</span>
               </div>
             </div>
           );
