@@ -1,16 +1,15 @@
 @import '@/assets/styles/variables.scss';
 
 .all {
-  margin: 20px;
-	min-height: 70vh;
-
+	margin: 20px;
+	height: calc(100vh - 280px);
 }
 .span {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 .infos {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 .one {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
