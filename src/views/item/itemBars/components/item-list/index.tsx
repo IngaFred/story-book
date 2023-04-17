@@ -23,86 +23,88 @@ import ID from '@/assets/images/itemDetails/9.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export interface ItemProps {
-  name: string;
-  url: string;
-  urlDetail: string;
-  introduction: string;
+	name: string;
+	url: string;
+	urlDetail: string;
+	introduction: string;
 }
 const itemList: ItemProps[] = [
-  {
-    name: '线索一',
-    url: A,
-    urlDetail: AD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索二',
-    url: B,
-    urlDetail: BD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索三',
-    url: C,
-    urlDetail: CD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索四',
-    url: D,
-    urlDetail: DD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索五',
-    url: E,
-    urlDetail: ED,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索六',
-    url: F,
-    urlDetail: FD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索七',
-    url: G,
-    urlDetail: GD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索八',
-    url: H,
-    urlDetail: HD,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
-  {
-    name: '线索九',
-    url: I,
-    urlDetail: ID,
-    introduction: '请根据线索所给信息，推断剧情演变。',
-  },
+	{
+		name: '线索一',
+		url: A,
+		urlDetail: AD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索二',
+		url: B,
+		urlDetail: BD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索三',
+		url: C,
+		urlDetail: CD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索四',
+		url: D,
+		urlDetail: DD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索五',
+		url: E,
+		urlDetail: ED,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索六',
+		url: F,
+		urlDetail: FD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索七',
+		url: G,
+		urlDetail: GD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索八',
+		url: H,
+		urlDetail: HD,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
+	{
+		name: '线索九',
+		url: I,
+		urlDetail: ID,
+		introduction: '请根据线索所给信息，推断剧情演变。',
+	},
 ];
 export default function ItemShow() {
-  const navigate = useNavigate();
-  const handleFooter = (selectItem: ItemProps) => {
-    navigate('/itemDetails', { state: { character: selectItem } });
-  };
-  return (
-    <div className={styles.all}>
-      <Grid columns={3} gap={8}>
-        {itemList.map((item, index) => {
-          return (
-            <div key={index}>
-              <div onClick={() => handleFooter(item)} className={styles.one}>
-                <Image src={item.url} fit="fill" className={styles.image} />
-                <span className={styles.span}>{item.name}</span>
-              </div>
-            </div>
-          );
-        })}
-      </Grid>
-    </div>
-  );
+	const navigate = useNavigate();
+	const handleFooter = (selectItem: ItemProps) => {
+		navigate('/itemDetails', { state: { character: selectItem } });
+	};
+	return (
+		<div className={styles.all}>
+			<Grid columns={3} gap={8}>
+				{itemList.map((item, index) => {
+					return (
+						<>
+							<div key={index}>
+								<div onClick={() => handleFooter(item)} className={styles.one}>
+									<Image src={item.url} fit="fill" className={styles.image} height={170}/>
+									<span className={styles.span}>{item.name}</span>
+								</div>
+							</div>
+						</>
+					);
+				})}
+			</Grid>
+		</div>
+	);
 }

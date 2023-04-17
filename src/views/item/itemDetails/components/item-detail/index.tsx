@@ -11,7 +11,7 @@ export default function ItemDetail() {
 		<div className={styles.all}>
 			<Grid columns={2} gap={16} className={styles.item}>
 				<div>
-					<Image src={character?.url} height={200} width={200} fit="fill" />
+					<Image src={character?.url} fit="fill" />
 				</div>
 				<div className={styles.infos}>{character?.introduction}</div>
 			</Grid>
@@ -19,7 +19,7 @@ export default function ItemDetail() {
 				contentPosition="left"
 				style={{
 					color: 'black',
-          borderColor: 'black',
+					borderColor: 'black',
 					borderStyle: 'dashed',
 				}}
 			>
