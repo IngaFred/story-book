@@ -14,7 +14,7 @@ export default function index() {
 					<ItemShow />
 				</Collapse.Panel>
 				<Collapse.Panel key="2" title="其他物品">
-        <ErrorBlock status='empty' />
+					<ErrorBlock status="empty" />
 				</Collapse.Panel>
 			</Collapse>
 			<Footer />

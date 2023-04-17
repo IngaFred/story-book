@@ -1,0 +1,5 @@
+@import '@/assets/styles/variables.scss';
+.all{
+    background: var(--background-color);
+    height: calc(100vh - 270px);
+}
