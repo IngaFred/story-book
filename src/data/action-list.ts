@@ -16,6 +16,8 @@ export interface ActionItem {
   chatData?: ChatItemProps;
   // 是否可以触发事件
   type?: 'disabled' | 'active';
+  // 下一章节id
+  nextChapterId?: number;
 }
 
 /**
@@ -30,6 +32,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       info: '你已经吃完了，没有什么好和老板聊的了',
     },
+    nextChapterId: 3,
   },
   {
     id: 2,
