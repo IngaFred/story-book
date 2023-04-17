@@ -2,11 +2,28 @@
 
 .all {
   margin: 20px;
-  height: 100%;
+  // height: calc(69vh);
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  min-height: 30vh;
+}
+.itemDetail{
+  position: relative;
+  bottom: 0; 
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 30vh;
 }
 .infos {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   font-weight: bolder;
   font-size: larger;
   text-align: center;
+  word-wrap: break-word;
 }
+

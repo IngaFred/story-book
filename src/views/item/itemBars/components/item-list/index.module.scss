@@ -1,14 +1,15 @@
 @import '@/assets/styles/variables.scss';
 
 .all {
-  margin: 20px;
+	margin: 20px;
+	height: calc(100vh - 280px);
 }
 .span {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 .one {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 .image {
-  height: 300px;
+	height: 300px;
 }

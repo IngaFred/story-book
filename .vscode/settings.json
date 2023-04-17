@@ -3,6 +3,7 @@
         "antd",
         "callout",
         "craco",
-        "pxtorem"
+        "pxtorem",
+        "zustand"
     ]
 }
