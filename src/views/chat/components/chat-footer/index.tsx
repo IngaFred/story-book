@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
+import type { ActionItem } from '@/data/action-list';
+
 import styles from './index.module.scss';
-import { ChatItemProps } from '../chat-item';
 
 export interface ChatFooterProps {
   [key: string]: any;
   actionList: ActionItem[];
   onAction?: (info: ActionItem) => void;
-}
-
-export interface ActionItem {
-  chatData?: ChatItemProps;
-  type?: 'disabled' | 'active';
 }
 
 /**

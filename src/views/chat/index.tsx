@@ -5,11 +5,14 @@ import ChatItem, { ChatItemProps } from './components/chat-item';
 import ChatFooter from './components/chat-footer';
 import { useSearchParams } from 'react-router-dom';
 import { useBaseStore } from '@/store';
+import { getActionList } from '@/data/action-list';
 
 export default function Chat() {
   const chatRef = useRef(null);
   const [params] = useSearchParams();
   const chatPageList = useBaseStore((state) => state.chatPageList);
+  const chapterId = useBaseStore((state) => state.chapterId);
+
   const _index = Number(params?.get?.('index')) || 0;
   const chatPage = chatPageList?.[_index] || {};
   const pushChatList = useBaseStore((state) => state.pushChatList);
@@ -33,7 +36,7 @@ export default function Chat() {
         return <ChatItem {...item} key={index} />;
       })}
       <ChatFooter
-        actionList={chatPage?.actionList || []}
+        actionList={getActionList(chatPage?.id, chapterId) || []}
         onAction={(item) => {
           setLoading(true);
           if (loading) return;

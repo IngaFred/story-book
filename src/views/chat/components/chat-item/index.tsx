@@ -5,6 +5,8 @@ import ChatBubble from '../chat-bubble';
 import styles from './index.module.scss';
 
 export interface ChatItemProps {
+  contactsId?: number;
+  chapterId?: number;
   name?: string;
   type?: 'chat' | 'my' | 'action';
   info?: string;
