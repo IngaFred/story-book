@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
 import styles from './index.module.scss';
+import { ChatItemProps } from '../chat-item';
 
 export interface ChatFooterProps {
   [key: string]: any;
@@ -9,7 +10,7 @@ export interface ChatFooterProps {
 }
 
 export interface ActionItem {
-  info?: string;
+  chatData?: ChatItemProps;
   type?: 'disabled' | 'active';
 }
 
@@ -93,7 +94,7 @@ const ChatBtn = (props: ChatBtnProps) => {
         onCheck();
       }}
     >
-      {item?.info}
+      {item?.chatData?.info}
     </div>
   );
 };

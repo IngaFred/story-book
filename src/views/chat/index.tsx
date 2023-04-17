@@ -6,8 +6,6 @@ import ChatFooter from './components/chat-footer';
 import { useSearchParams } from 'react-router-dom';
 import { useBaseStore } from '@/store';
 
-const chatData: ChatItemProps[] = [];
-
 export default function Chat() {
   const chatRef = useRef(null);
   const [params] = useSearchParams();
@@ -43,7 +41,7 @@ export default function Chat() {
           new Promise((resolve, reject) => {
             pushChatList(_index, {
               type: 'my',
-              info: item.info,
+              ...item?.chatData,
             });
             scrollToBottom();
             setTimeout(() => {
@@ -51,7 +49,7 @@ export default function Chat() {
             }, 1500);
           })
             .then(() => {
-              if (item.info === '你好') {
+              if (item?.chatData?.info === '你好') {
                 pushChatList(_index, {
                   type: 'chat',
                   info:

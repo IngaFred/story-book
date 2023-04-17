@@ -53,14 +53,22 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '街坊小巷',
       actionList: [
         {
-          info: '你已经吃完了，没有什么好和老板聊的了',
           type: 'disabled',
+          chatData: {
+            info: '你已经吃完了，没有什么好和老板聊的了',
+          },
         },
         {
-          info: '我还能吃，再来一份',
+          chatData: {
+            time: '下午',
+            area: '街坊小巷',
+            info: '我还能吃，再来一份',
+          },
         },
         {
-          info: '给我打包一份',
+          chatData: {
+            info: '给我打包一份',
+          },
         },
       ],
       chatList: [
@@ -138,11 +146,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '城里',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -152,11 +164,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '城外',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -166,11 +182,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '羊肉小摊',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -180,11 +200,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒馆',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -194,11 +218,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒楼',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -208,11 +236,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒吧',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -222,11 +254,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒店',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -236,11 +272,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒窖',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -250,11 +290,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒坊',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
@@ -264,11 +308,15 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       area: '酒庄',
       actionList: [
         {
-          info: '你对这里不是很感兴趣',
+          chatData: {
+            info: '你对这里不是很感兴趣',
+          },
           type: 'disabled',
         },
         {
-          info: '你好',
+          chatData: {
+            info: '你好',
+          },
         },
       ],
     },
