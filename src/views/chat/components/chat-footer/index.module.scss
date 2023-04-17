@@ -1,31 +1,59 @@
 @import '@/assets/styles/variables.scss';
 
 :root {
-  --footer-height: 160px;
+  --footer-height: 200px;
 }
 
 .empty_block {
   box-sizing: border-box;
-  height: var(--footer-height);
+  min-height: var(--footer-height);
   padding: 20px 0 20px;
+  transition: min-height 0.3s;
 }
 
 .footer {
   box-sizing: border-box;
   z-index: 100;
   width: 100%;
-  height: var(--footer-height);
+  min-height: var(--footer-height);
   display: flex;
   justify-content: space-around;
   background-color: var(--background-color);
   position: fixed;
   bottom: 0;
   padding: 20px;
+  transition: min-height 0.3s;
+  z-index: 1;
+}
+.active {
+  min-height: 600px;
+  transition: min-height 0.3s;
+}
+.active_mask {
+  z-index: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
 }
 
 .chat_btn {
+  padding: 20px;
   border-radius: 10px;
   background-color: #fff;
-  height: 80px;
+  min-height: 70px;
   width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+}
+.active_btn {
+  border: 1px solid #000;
+}
+.disabled_btn {
+  color: var(--desc-color);
+}
+.action_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './index.module.scss';
 import Header from '@/components/header';
 import ChatItem, { ChatItemProps } from './components/chat-item';
@@ -72,14 +72,71 @@ const chatData: ChatItemProps[] = [
     name: '羊肉串老板',
   },
 ];
-export default function index() {
+export default function Chat() {
+  const chatRef = useRef(null);
+  const [chatList, setChatList] = useState<ChatItemProps[]>(chatData);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  /**
+   * 滚动到底部
+   */
+  const scrollToBottom = () => {
+    if (chatRef?.current) {
+      // @ts-ignore
+      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    }
+  };
+
   return (
-    <div className={styles.chat}>
+    <div ref={chatRef} className={styles.chat}>
       <Header title="羊肉串老板" />
-      {chatData.map((item, index) => {
+      {chatList.map((item, index) => {
         return <ChatItem {...item} key={index} />;
       })}
-      <ChatFooter />
+      <ChatFooter
+        onAction={(item) => {
+          setLoading(true);
+          if (loading) return;
+          // TODO: 模拟网络请求，请求成功后setLoading(false)
+          new Promise((resolve, reject) => {
+            setChatList((data) => {
+              return [
+                ...data,
+                {
+                  type: 'my',
+                  info: item.info,
+                },
+              ];
+            });
+            scrollToBottom();
+            setTimeout(() => {
+              resolve(1);
+            }, 1500);
+          })
+            .then(() => {
+              setChatList((data) => {
+                return [
+                  ...data,
+                  {
+                    type: 'chat',
+                    info: '好的没问题',
+                    name: '羊肉串老板',
+                  },
+                ];
+              });
+              scrollToBottom();
+              return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  resolve(1);
+                }, 1500);
+              });
+            })
+            .then(() => {
+              scrollToBottom();
+              setLoading(false);
+            });
+        }}
+      />
     </div>
   );
 }
