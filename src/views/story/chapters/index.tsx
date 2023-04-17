@@ -1,8 +1,15 @@
-import styles from './index.module.scss';
-import React from 'react'
+import React from 'react';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 
-export default function index() {
+import styles from './index.module.scss';
+
+export default function Home() {
   return (
-    <div>index</div>
-  )
+    <div className={styles.home}>
+      <Header title="银子那些事儿 第一章" />
+
+      <Footer />
+    </div>
+  );
 }
