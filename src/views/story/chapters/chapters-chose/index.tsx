@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from 'antd-mobile';
+import { List, Tag } from 'antd-mobile';
 import { useNavigate } from 'react-router-dom';
 import styles from './index.module.scss';
 
@@ -44,9 +44,11 @@ function Chose() {
 
 	return (
 		<div className={styles.all}>
-			{data.map((item) => (
-				<Directory data={item} key={item.id} />
-			))}
+			<div style={{ margin: '20px' }}>
+				{data.map((item) => (
+					<Directory data={item} key={item.id} />
+				))}
+			</div>
 		</div>
 	);
 }
@@ -80,7 +82,36 @@ function ListItem(props: { item: Item }) {
 				) : props.item.id === '00' ? (
 					<div className={styles['list-00']}>{props.item.name}</div>
 				) : (
-					<div className={styles['list-item']}>{props.item.name}</div>
+					<div className={styles['list-item']}>
+						<span>{props.item.name}</span>
+						{props.item.id === '001' ? (
+							<Tag
+								color="rgb(127, 166, 192)"
+								fill="outline"
+								style={{
+									'--border-radius': '0.1rem',
+									height: '0.8rem',
+									margin: 'auto 0',
+									lineHeight: '0.65rem',
+								}}
+							>
+								推进中
+							</Tag>
+						) : (
+							<Tag
+								color="rgb(192, 127, 127)"
+								fill="outline"
+								style={{
+									'--border-radius': '0.1rem',
+									height: '0.8rem',
+									margin: 'auto 0',
+									lineHeight: '0.65rem',
+								}}
+							>
+								未进行
+							</Tag>
+						)}
+					</div>
 				)}
 			</div>
 			{renderChildren(props.item.children)}

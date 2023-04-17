@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 export default function Home() {
   return (
     <div className={styles.home}>
-      <Header title="章节选择" />
+      <Header title="章节选择"/>
       <Chose />
       <Footer />
     </div>

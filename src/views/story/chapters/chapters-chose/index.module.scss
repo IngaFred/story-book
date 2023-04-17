@@ -1,46 +1,50 @@
 @import '@/assets/styles/variables.scss';
 .all {
-	background: var(--background-color);
-	height: calc(100vh - 280px);
-	margin: 20px;
-	// padding: 20px;
-	// border: 1px solid #ddd;
+    background: #f2f2f2;
+	height: calc(100vh - 240px);
+	border-top: 1px solid #000000;
 }
 .directory{
-    background: var(--background-color);
+    background: #f2f2f2;
 }
 .special{
-    color: #d19393;
+    font-size: 0.9rem;
+    color: #ff6464;
 	font-weight: bold;
     padding: 0 0.3rem;
     margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
     .span{
         padding: 0.1rem;
         border: 1px solid #ddd;
     }
     .span:active, span:hover {
-        color: rgb(222, 67, 126);
+        color: rgb(50, 142, 227);
     }
 }
 
 .list-00 {
     padding: 0 0.5rem;
     line-height: 2rem;
-    color: #bdb6b6;
-    font-size: 1rem;
+    color: #181717;
+    font-size: 1.2rem;
     font-weight: bold;
-	background: var(--background-color);
+    background: #f2f2f2;
 }
 .list-item {
+    font-size: 0.85rem;
     padding: 0 1.2rem;
     line-height: 2rem;
-    color: #9d9d9d;
-	background: var(--background-color);
+    color: #434242;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
 }
 
 .list-item:active, list-item:hover {
-	color: rgb(132, 175, 234);
-    background-color: #f2eeee;
+	color: rgb(59, 132, 235);
+    background-color: #ddd9d9;
 }
 
 
