@@ -19,22 +19,22 @@ function Footer(props: FooterProps) {
   const footers: Footer[] = [
     {
       name: '聊天',
-      icon: <MessageFill fontSize={24} />,
+      icon: <MessageFill style={{fontSize: '1.3rem'}} />,
       path: '/home',
     },
     {
       name: '物品',
-      icon: <MailFill fontSize={24} />,
+      icon: <MailFill style={{fontSize: '1.3rem'}} />,
       path: '/itemBars',
     },
     {
       name: '地图',
-      icon: <StarFill fontSize={24} />,
+      icon: <StarFill style={{fontSize: '1.3rem'}} />,
       path: '/home',
     },
     {
       name: '角色',
-      icon: <SmileFill fontSize={24} />,
+      icon: <SmileFill style={{fontSize: '1.3rem'}} />,
       path: '/charactersSelection',
     },
   ];
