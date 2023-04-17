@@ -4,6 +4,7 @@ import ListItem from '@/components/list-item';
 import { useBaseStore } from '@/store';
 
 import styles from './index.module.scss';
+import { Ellipsis } from 'antd-mobile';
 
 /**
  * 聊天列表
@@ -34,7 +35,8 @@ function ChatList() {
             top={<div className={styles.name}>{item.name}</div>}
           >
             <div className={styles.infos}>
-              {item?.chatList?.[item.chatList.length - 1]?.info}
+            <Ellipsis direction='end' content={item?.chatList?.[item.chatList.length - 1]?.info as string} />
+              {/* {item?.chatList?.[item.chatList.length - 1]?.info} */}
             </div>
           </ListItem>
         );
