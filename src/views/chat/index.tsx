@@ -30,7 +30,7 @@ export default function Chat() {
 
   return (
     <div ref={chatRef} className={styles.chat}>
-      <Header title="羊肉串老板" />
+      <Header title={chatPage?.name} />
       {chatList.map((item, index) => {
         return <ChatItem {...item} key={index} />;
       })}
