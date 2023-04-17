@@ -1,5 +1,46 @@
 @import '@/assets/styles/variables.scss';
-.all{
-    background: var(--background-color);
-    height: calc(100vh - 270px);
+.all {
+	background: var(--background-color);
+	height: calc(100vh - 280px);
+	margin: 20px;
+	// padding: 20px;
+	// border: 1px solid #ddd;
 }
+.directory{
+    background: var(--background-color);
+}
+.special{
+    color: #d19393;
+	font-weight: bold;
+    padding: 0 0.3rem;
+    margin-bottom: 0.3rem;
+    .span{
+        padding: 0.1rem;
+        border: 1px solid #ddd;
+    }
+    .span:active, span:hover {
+        color: rgb(222, 67, 126);
+    }
+}
+
+.list-00 {
+    padding: 0 0.5rem;
+    line-height: 2rem;
+    color: #bdb6b6;
+    font-size: 1rem;
+    font-weight: bold;
+	background: var(--background-color);
+}
+.list-item {
+    padding: 0 1.2rem;
+    line-height: 2rem;
+    color: #9d9d9d;
+	background: var(--background-color);
+}
+
+.list-item:active, list-item:hover {
+	color: rgb(132, 175, 234);
+    background-color: #f2eeee;
+}
+
+
