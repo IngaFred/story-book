@@ -15,6 +15,7 @@ const StoryBack = lazy(() => import('@/views/story/storyBack'));
 const ItemBars = lazy(() => import('@/views/item/itemBars'));
 const ItemDetails = lazy(() => import('@/views/item/itemDetails'));
 const Chat = lazy(() => import('@/views/chat'));
+const Myself = lazy(() => import('@/views/myself'));
 
 export const routes: RouteObject[] = [
   {
@@ -56,6 +57,10 @@ export const routes: RouteObject[] = [
   {
     path: '/chat',
     element: <Chat />,
+  },
+  {
+    path: '/myself',
+    element: <Myself />,
   },
 ];
 

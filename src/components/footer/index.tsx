@@ -35,7 +35,7 @@ function Footer(props: FooterProps) {
     {
       name: '角色',
       icon: <SmileFill style={{fontSize: '1.3rem'}} />,
-      path: '/charactersSelection',
+      path: '/myself',
     },
   ];
   const navigate = useNavigate();

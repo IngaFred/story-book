@@ -7,9 +7,9 @@ import styles from './index.module.scss';
 export default function index() {
   return (
     <div className={styles.home}>
-      <Header title="银子那些事儿 选角" />
+      <Header title="角色选择" />
       <ShowCard />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

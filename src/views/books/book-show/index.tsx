@@ -22,7 +22,7 @@ const books: Book[] = [
 		title: '《银子那些事儿》',
 		cover: coverImage,
 		info: '点击查看故事背景',
-		path: '/chapters',
+		path: '/charactersSelection',
 		background: coverImageBackGround,
 	},
 	{
