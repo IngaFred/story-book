@@ -11,7 +11,7 @@ export interface ChapterTreeItem {
 /**
  * 章节信息
  */
-export const chapterTree: any[] = [
+export const chapterTree: ChapterTreeItem[] = [
   {
     id: 1,
     name: '主线',

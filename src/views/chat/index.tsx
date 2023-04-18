@@ -20,6 +20,7 @@ export default function Chat() {
   const _index = Number(params?.get?.('index')) || 0;
   const chatPage = chatPageList?.[_index] || {};
   const pushChatList = useBaseStore((state) => state.pushChatList);
+  const pushChatListById = useBaseStore((state) => state.pushChatListById);
   const chatList: ChatItemProps[] = chatPage?.chatList || [];
 
   /**
@@ -56,36 +57,54 @@ export default function Chat() {
             }, 1500);
           }).then(() => {
             // 递归延迟1.5s添加聊天记录
-            const addChats = (_id?: number, index?: number) => {
-              console.log('_id', _id);
-              if (!_id)
-                return new Promise((resolve, reject) => {
-                  scrollToBottom();
-                  setTimeout(() => {
-                    resolve(1);
-                  }, 1500);
-                });
-              const responseInfo = getChatById(_id);
-              if (!responseInfo)
-                return new Promise((resolve, reject) => {
-                  scrollToBottom();
-                  setTimeout(() => {
-                    resolve(1);
-                  }, 1500);
-                });
+            const addChats = ({
+              chatId,
+              chatPageId,
+              index,
+            }: {
+              chatId?: number;
+              chatPageId?: number;
+              index?: number;
+            }) => {
+              console.log('chatId', chatId);
+              const callback = new Promise((resolve, reject) => {
+                scrollToBottom();
+                setTimeout(() => {
+                  resolve(1);
+                }, 1500);
+              });
+              if (!chatId) return callback;
+              const responseInfo = getChatById(chatId);
+              if (!responseInfo) return callback;
               // 推送聊天记录
-              pushChatList(index || _index, responseInfo);
+              // 根据index推送
+              if (Number(index) > -1) {
+                pushChatList(index || _index, responseInfo);
+              }
+              // 根据id推送
+              if (chatPageId) {
+                pushChatListById(chatPageId, responseInfo);
+              }
               return new Promise((resolve, reject) => {
                 scrollToBottom();
                 setTimeout(() => {
-                  resolve(addChats(responseInfo?.nextResponseId, index));
+                  resolve(
+                    addChats({
+                      chatId: responseInfo?.nextResponseId,
+                      chatPageId: chatPageId,
+                      index: index,
+                    })
+                  );
                 }, 1500);
               });
             };
 
             // 触发下一个对话
             if (item?.nextResponseId) {
-              addChats(item.nextResponseId, _index);
+              addChats({
+                chatId: item.nextResponseId,
+                index: _index,
+              });
             }
 
             // 触发下一个章节
@@ -108,7 +127,10 @@ export default function Chat() {
                 const _chatList = _item?.chatList || [];
                 if (!_chatList?.length) continue;
                 const { nextResponseId } = _chatList[_chatList.length - 1];
-                addChats(nextResponseId, chatPageList.length + i);
+                addChats({
+                  chatId: nextResponseId,
+                  chatPageId: _item?.id,
+                });
               }
             }
           });

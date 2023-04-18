@@ -43,6 +43,12 @@ export interface BaseStore {
    * @param e 某条聊天记录
    */
   pushChatList: (index: number, e: ChatItemProps) => void;
+  /**
+   * 给某个联系人添加聊天记录
+   * @param id 联系人id
+   * @param e 某条聊天记录
+   */
+  pushChatListById: (id: number, e: ChatItemProps) => void;
 }
 
 /**
@@ -213,13 +219,65 @@ export const useBaseStore = create<BaseStore>()((set) => ({
   setChapterId: (e: number) =>
     set((state: BaseStore) => ({ ...state, chapterId: e })),
   pushChatPageList: (e: ChatPageItem[]) =>
-    set((state: BaseStore) => ({
-      ...state,
-      chatPageList: [...state?.chatPageList, ...e],
-    })),
+    // @ts-ignore
+    set((state: BaseStore) => {
+      console.log('pushChatPageList', e, state);
+      const chatPageList = state?.chatPageList || [];
+      // 如果e.id已经存在，增量添加
+      e.map((item) => {
+        const index = chatPageList.findIndex((e) => e.id === item.id);
+        // 新增
+        if (!chatPageList || !chatPageList?.[index]?.chatList || index === -1) {
+          return chatPageList.push(item);
+        }
+        // 增量
+        if (!item.chatList) {
+          const newItem = {
+            ...item,
+            chatList: chatPageList[index].chatList,
+          };
+          chatPageList[index] = newItem;
+          return newItem;
+        }
+        const newItem = {
+          ...item,
+          chatList: [
+            ...(chatPageList?.[index]?.chatList || []),
+            ...item.chatList,
+          ],
+        };
+        chatPageList[index] = newItem;
+        return newItem;
+      });
+      return {
+        ...state,
+        chatPageList: chatPageList,
+      };
+    }),
   pushChatList: (index: number, chatItem: ChatItemProps) => {
     return set((state: BaseStore) => {
       console.log('pushChatList', index, chatItem, state);
+      return {
+        ...state,
+        chatPageList: [
+          ...state.chatPageList.slice(0, index),
+          {
+            ...state.chatPageList[index],
+            chatList: [
+              ...(state?.chatPageList?.[index]?.chatList || []),
+              chatItem,
+            ],
+          },
+          ...state.chatPageList.slice(index + 1),
+        ],
+      };
+    });
+  },
+  pushChatListById: (id: number, chatItem: ChatItemProps) => {
+    return set((state: BaseStore) => {
+      console.log('pushChatListById', id, chatItem, state);
+      const index = state.chatPageList.findIndex((e) => e.id === id);
+
       return {
         ...state,
         chatPageList: [
