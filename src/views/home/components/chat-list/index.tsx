@@ -4,7 +4,7 @@ import ListItem from '@/components/list-item';
 import { useBaseStore } from '@/store';
 
 import styles from './index.module.scss';
-import { Ellipsis } from 'antd-mobile';
+import { Badge, Ellipsis } from 'antd-mobile';
 
 /**
  * 聊天列表
@@ -24,7 +24,13 @@ function ChatList() {
             }}
             className={styles.list_item}
             left={
-              <img className={styles.head_img} src="/logo192.png" alt="头像" />
+              <Badge content={item?.badge}>
+                <img
+                  className={styles.head_img}
+                  src="/logo192.png"
+                  alt="头像"
+                />
+              </Badge>
             }
             right={
               <div className={styles.right}>
@@ -35,7 +41,12 @@ function ChatList() {
             top={<div className={styles.name}>{item.name}</div>}
           >
             <div className={styles.infos}>
-            <Ellipsis direction='end' content={item?.chatList?.[item.chatList.length - 1]?.info as string} />
+              <Ellipsis
+                direction="end"
+                content={
+                  item?.chatList?.[item.chatList.length - 1]?.info as string
+                }
+              />
               {/* {item?.chatList?.[item.chatList.length - 1]?.info} */}
             </div>
           </ListItem>

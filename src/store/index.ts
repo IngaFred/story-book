@@ -19,6 +19,8 @@ export interface ChatPageItem {
   id: number;
   // 联系人名字
   name?: string;
+  // 小红点
+  badge?: string | number;
   // 地点
   area?: string;
   // 时间
@@ -62,6 +64,7 @@ export const useBaseStore = create<BaseStore>()((set) => ({
       id: 1,
       name: '主线',
       area: '街坊小巷',
+      badge: 2,
       chatList: [
         {
           contactsId: 1,
