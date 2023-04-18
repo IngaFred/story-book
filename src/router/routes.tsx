@@ -11,7 +11,7 @@ const CharactersSelection = lazy(
   () => import('@/views/characters/charactersSelection')
 );
 const Chapters = lazy(() => import('@/views/story/chapters'));
-const Storyline = lazy(() => import('@/views/story/storyline'));
+const StoryBack = lazy(() => import('@/views/story/storyline'));
 const ItemBars = lazy(() => import('@/views/item/itemBars'));
 const ItemDetails = lazy(() => import('@/views/item/itemDetails'));
 const Chat = lazy(() => import('@/views/chat'));
@@ -19,7 +19,7 @@ const Chat = lazy(() => import('@/views/chat'));
 export const routes: RouteObject[] = [
   {
     path: '/',
-    element: <Navigate to="/home" />,
+    element: <Navigate to="/book" />,
   },
   {
     path: '/home',
@@ -42,8 +42,8 @@ export const routes: RouteObject[] = [
     element: <Chapters />,
   },
   {
-    path: '/storyline',
-    element: <Storyline />,
+    path: '/storyBack',
+    element: <StoryBack />,
   },
   {
     path: '/itemBars',

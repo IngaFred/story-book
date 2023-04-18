@@ -4,7 +4,7 @@ import Header from '@/components/header';
 import Chose from './chapters-chose';
 import styles from './index.module.scss';
 
-export default function Home() {
+export default function index() {
   return (
     <div className={styles.home}>
       <Header title="章节选择"/>

@@ -90,9 +90,9 @@ function ListItem(props: { item: Item }) {
 								fill="outline"
 								style={{
 									'--border-radius': '0.1rem',
-									height: '0.8rem',
+									height: '1rem',
 									margin: 'auto 0',
-									lineHeight: '0.65rem',
+									lineHeight: '0.8rem',
 								}}
 							>
 								推进中
@@ -103,9 +103,9 @@ function ListItem(props: { item: Item }) {
 								fill="outline"
 								style={{
 									'--border-radius': '0.1rem',
-									height: '0.8rem',
+									height: '1rem',
 									margin: 'auto 0',
-									lineHeight: '0.65rem',
+									lineHeight: '0.8rem',
 								}}
 							>
 								未进行
