@@ -1,0 +1,12 @@
+@import '@/assets/styles/variables.scss';
+
+.all {
+  margin: 20px;
+	height: calc(100vh - 140px);
+}
+.infos {
+  margin: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+}

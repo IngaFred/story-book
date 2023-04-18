@@ -1,7 +1,7 @@
 @import '@/assets/styles/variables.scss';
 .all {
 	margin: 20px;
-	height: calc(100vh - 280px);
+	height: calc(100vh - 140px);
 }
 .book{
     display: flex;
@@ -20,9 +20,9 @@
     margin-bottom: 1.2rem;
 }
 .span2{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     display: inline-block;
-    padding-left: 1rem;
+    padding-left: 0.6rem;
     width: 100%;
     color: rgba(255, 0, 72, 0.523);
 }

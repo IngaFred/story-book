@@ -11,7 +11,7 @@ const CharactersSelection = lazy(
   () => import('@/views/characters/charactersSelection')
 );
 const Chapters = lazy(() => import('@/views/story/chapters'));
-const StoryBack = lazy(() => import('@/views/story/storyline'));
+const StoryBack = lazy(() => import('@/views/story/storyBack'));
 const ItemBars = lazy(() => import('@/views/item/itemBars'));
 const ItemDetails = lazy(() => import('@/views/item/itemDetails'));
 const Chat = lazy(() => import('@/views/chat'));
