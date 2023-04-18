@@ -23,7 +23,7 @@ export const chapterTree: ChapterTreeItem[] = [
       {
         id: 2,
         name: '林珀',
-        area: '城里',
+        area: '大漠',
         chatList: [
           {
             contactsId: 2,
