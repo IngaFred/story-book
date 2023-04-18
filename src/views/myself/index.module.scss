@@ -1,0 +1,9 @@
+@import '@/assets/styles/variables.scss';
+
+.home {
+  background: var(--background-color);
+}
+.body {
+  height: 2000px;
+  color: var(--desc-color);
+}
