@@ -1,5 +1,6 @@
 import { ChatItemProps } from '@views/chat/components/chat-item';
 import { create } from 'zustand';
+import { Characters } from '@/views/characters/charactersSelection/components/show-card';
 
 // const areaList = [
 //   '城里',
@@ -295,3 +296,11 @@ export const useBaseStore = create<BaseStore>()((set) => ({
     });
   },
 }));
+
+// pushCharacterState: (pushCharacter: Characters) => {
+// 	set((state: BaseStore) => ({
+// 		...state,
+// 		Character: [...state?.character, pushCharacter],
+// 	}));
+// },
+// }));
