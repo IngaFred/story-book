@@ -64,6 +64,7 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     nextResponseId: 8,
+    nextChapterId: 5,
   },
   {
     contactsId: 2,
@@ -76,6 +77,30 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     nextResponseId: 7,
+  },
+  {
+    contactsId: 2,
+    chapterId: 5,
+    chatData: {
+      contactsId: 2,
+      chapterId: 5,
+      type: 'my',
+      info: '请务必带带我',
+      time: '',
+    },
+    nextResponseId: 10,
+    nextChapterId: 6,
+  },
+  {
+    contactsId: 2,
+    chapterId: 5,
+    chatData: {
+      contactsId: 2,
+      chapterId: 5,
+      type: 'my',
+      info: 'bye.bye.',
+      time: '',
+    },
   },
 ];
 
