@@ -18,7 +18,7 @@ interface Book {
 }
 const books: Book[] = [
 	{
-		id: '1',
+		id: '0',
 		title: '《银子那些事儿》',
 		cover: coverImage,
 		info: '点击查看故事背景',
@@ -26,7 +26,7 @@ const books: Book[] = [
 		background: coverImageBackGround,
 	},
 	{
-		id: '2',
+		id: '1',
 		title: '《Dance》',
 		cover: dance,
 		info: '点击查看故事背景',
@@ -46,10 +46,10 @@ export default function Show() {
 	return (
 		<div className={styles.all}>
 			<Grid columns={1}>
-				{books.map((item, index) => {
+				{books.map((item) => {
 					return (
-						<>
-							<div key={index} className={styles.book}>
+						<div key={item.id}>
+							<div className={styles.book}>
 								<Grid columns={2} gap={'2rem'}>
 									<Image
 										src={item.cover}
@@ -78,8 +78,9 @@ export default function Show() {
 								style={{
 									color: 'black',
 								}}
+								key={`${item.id}-divider`}
 							/>
-						</>
+						</div>
 					);
 				})}
 			</Grid>

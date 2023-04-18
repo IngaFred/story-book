@@ -94,14 +94,12 @@ export default function ItemShow() {
 			<Grid columns={3} gap={8}>
 				{itemList.map((item, index) => {
 					return (
-						<>
-							<div key={index}>
-								<div onClick={() => handleFooter(item)} className={styles.one}>
-									<Image src={item.url} fit="fill" height={'7rem'}/>
-									<span className={styles.span}>{item.name}</span>
-								</div>
+						<div key={index}>
+							<div onClick={() => handleFooter(item)} className={styles.one}>
+								<Image src={item.url} fit="fill" height={'7rem'} />
+								<span className={styles.span}>{item.name}</span>
 							</div>
-						</>
+						</div>
 					);
 				})}
 			</Grid>
