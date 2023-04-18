@@ -17,7 +17,7 @@ export default function Detail() {
 		setChoseCharacter(choseCharacter);
 	};
 	useEffect(() => {
-		console.log('==selected :>> ', selected);
+		// console.log('==selected :>> ', selected);
 		typeof choseCharacter === 'object' && navigate('/charactersSelection', {
 			state: { chose: choseCharacter, isSelected: selected },
 		});

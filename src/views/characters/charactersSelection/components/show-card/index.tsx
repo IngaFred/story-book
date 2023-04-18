@@ -52,8 +52,8 @@ function ShowCard() {
     typeof chose === 'object' && setChoseCharacter(chose)
   }, [chose, isSelected])
   
-	console.log('isSelected ==>', isSelected);
-  console.log('selected ==>', selected)
+	// console.log('isSelected ==>', isSelected);
+  // console.log('selected ==>', selected)
 	// console.log('chose', chose);
   const handleFooter = (selectCharacter: Characters) => {
 		navigate('/charactersDetails', { state: { character: selectCharacter } });
