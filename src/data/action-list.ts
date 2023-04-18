@@ -7,7 +7,7 @@ export interface ActionItem {
   // 数据库自增id
   id?: number;
   // 回答id
-  responseId?: number;
+  nextResponseId?: number;
   // 联系人id
   contactsId?: number;
   // 章节id
@@ -21,7 +21,7 @@ export interface ActionItem {
 }
 
 /**
- * 数据库存储的数据
+ * 可选对话信息
  */
 const allActionList: ActionItem[] = [
   {
@@ -32,9 +32,10 @@ const allActionList: ActionItem[] = [
       info: '回忆一下',
     },
     nextChapterId: 2,
+    nextResponseId: 1,
   },
   {
-    id: 1,
+    id: 2,
     contactsId: 2,
     chapterId: 2,
     chatData: {
@@ -43,12 +44,38 @@ const allActionList: ActionItem[] = [
     nextChapterId: 3,
   },
   {
+    id: 3,
     contactsId: 2,
     chapterId: 3,
     chatData: {
       info: '感谢大侠救命之恩',
     },
     nextChapterId: 4,
+    nextResponseId: 6,
+  },
+  {
+    contactsId: 2,
+    chapterId: 4,
+    chatData: {
+      contactsId: 2,
+      chapterId: 4,
+      type: 'my',
+      info: '我是蒙古人，从小没爹没娘，就在这儿长大的，我烤羊肉串可厉害了',
+      time: '',
+    },
+    nextResponseId: 8,
+  },
+  {
+    contactsId: 2,
+    chapterId: 4,
+    chatData: {
+      contactsId: 2,
+      chapterId: 4,
+      type: 'my',
+      info: '关你P事',
+      time: '',
+    },
+    nextResponseId: 7,
   },
 ];
 

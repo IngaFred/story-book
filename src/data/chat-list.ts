@@ -1,15 +1,21 @@
 import { ChatItemProps } from '@views/chat/components/chat-item';
 
+/**
+ * 对话信息
+ */
 const allChatList: ChatItemProps[] = [
   {
+    id: 1,
     contactsId: 1,
     chapterId: 2,
     type: 'action',
     info: '你是叫【布脱脱】，是【如意楼】的低级【如意郎】 (其实你只去取过情报, 送过钱，没干过什么刺激的特工工作)。你高颧骨、卷头发，一副蒙古人的样子，出生于北元(元朝被明朝所灭，剩余势力跑到了漠北，也就是现在的蒙古，历史上 称为北元 ,打小父母双亡，六七岁的你就在漠北靠着乞讨生活，经常饥一顿饱一顿,仗着自己身高体壮,实在是饿极了你也去打一些猎物吃,自小你就练就了一身蛮力、速度以及烤肉的好手艺。',
     area: '',
     time: '你的过去',
+    nextResponseId: 2,
   },
   {
+    id: 2,
     contactsId: 1,
     chapterId: 2,
     type: 'action',
@@ -17,6 +23,81 @@ const allChatList: ChatItemProps[] = [
     area: '大漠',
     time: '大明朝永乐六年（1408）',
   },
+  {
+    id: 3,
+    contactsId: 2,
+    chapterId: 4,
+    type: 'action',
+    info: '这一天你正在大漠跟一只黄羊和赛跑(其实是想打死黄羊吃肉)，眼见你被黄羊用角顶着翻了几个跟头，突然黄羊不动了，你喘着粗气，惊魂未定',
+    area: '大漠',
+    time: '',
+  },
+  {
+    id: 4,
+    contactsId: 2,
+    chapterId: 4,
+    name: '林珀',
+    type: 'chat',
+    info: '小兄弟，你没事吧',
+    nextResponseId: 5,
+  },
+  {
+    id: 5,
+    contactsId: 2,
+    chapterId: 4,
+    type: 'action',
+    info: '一抬头，只见一个身着紫色长衫，手持宝剑的女子，英姿飒爽，正关切地望着你，见你看他，爽朗一笑。',
+    time: '',
+  },
+  {
+    id: 6,
+    contactsId: 2,
+    chapterId: 4,
+    name: '林珀',
+    type: 'chat',
+    info: '不必客气，小兄弟为何一人在此？',
+    time: '',
+  },
+  {
+    id: 7,
+    contactsId: 2,
+    chapterId: 4,
+    name: '林珀',
+    type: 'chat',
+    info: '滚',
+    time: '',
+  },
+  {
+    id: 8,
+    contactsId: 1,
+    chapterId: 4,
+    name: '林珀',
+    type: 'chat',
+    info: '哈哈哈，看你跑的挺快，要不要和我来干活，给你个邮差，也能挣点饭钱',
+    time: '',
+  },
+  //     {
+  //       contactsId: 1,
+  //       chapterId: 4,
+  //       type: 'action',
+  //       info: '你早就想找一份正经工作了，只可惜没人看得上你。现在有个贵人带你，况且她是你的救命恩人，你想好好把握这次机会，并且好好的报答她',
+  //       time: '',
+  //     },
+  //     {
+  //       contactsId: 1,
+  //       chapterId: 4,
+  //       type: 'my',
+  //       info: '请务必带带我',
+  //       time: '',
+  //     },
+  //     {
+  //       contactsId: 1,
+  //       chapterId: 4,
+  //       name: '林珀',
+  //       type: 'chat',
+  //       info: '随我来吧，小兄弟',
+  //       time: '',
+  //     },
   {
     contactsId: 1,
     chapterId: 5,
@@ -162,6 +243,11 @@ const allChatList: ChatItemProps[] = [
     time: '最近的事',
   },
 ];
+
+export const getChatById = (id: number) => {
+  const chat = allChatList.find((item) => item.id === id);
+  return chat;
+};
 
 export const getChatList = (contactsId: number, chapterId: number) => {
   const list = allChatList.filter(
