@@ -7,7 +7,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useBaseStore } from '@/store';
 import { getActionList } from '@/data/action-list';
 import { getChapter } from '@/data/chapter-list';
-import { getChatList } from '@/data/chat-list';
+import { getChatById } from '@/data/chat-list';
 
 export default function Chat() {
   const chatRef = useRef(null);
@@ -21,7 +21,6 @@ export default function Chat() {
   const chatPage = chatPageList?.[_index] || {};
   const pushChatList = useBaseStore((state) => state.pushChatList);
   const chatList: ChatItemProps[] = chatPage?.chatList || [];
-  const [loading, setLoading] = useState<boolean>(false);
 
   /**
    * 滚动到底部
@@ -42,10 +41,11 @@ export default function Chat() {
       <ChatFooter
         actionList={getActionList(chatPage?.id, chapterId) || []}
         onAction={(item) => {
-          setLoading(true);
-          if (loading) return;
+          console.log('onAction', item);
+
           // TODO: 模拟网络请求，请求成功后setLoading(false)
           new Promise((resolve, reject) => {
+            // 推送聊天记录
             pushChatList(_index, {
               type: 'my',
               ...item?.chatData,
@@ -54,39 +54,64 @@ export default function Chat() {
             setTimeout(() => {
               resolve(1);
             }, 1500);
-          })
-            .then(() => {
-              if (item?.nextChapterId) {
-                setChapterId(item.nextChapterId);
-                const _chatList = getChatList(
-                  item.contactsId || 1,
-                  item.nextChapterId
-                );
-                // 添加新的聊天人物
-                const newChapter = getChapter(item.nextChapterId);
-                const { addChatPages } = newChapter || {};
-                if (addChatPages) {
-                  pushChatPageList(addChatPages);
-                }
-                // 递归延迟1.5s添加聊天记录
-                const _fun = (_data: ChatItemProps[]) => {
-                  if (!_data?.length) return 1;
-                  // 推送聊天记录
-                  pushChatList(_index, _data[0]);
-                  return new Promise((resolve, reject) => {
-                    scrollToBottom();
-                    setTimeout(() => {
-                      resolve(_fun(_data.slice(1)));
-                    }, 1500);
-                  });
-                };
-                return _fun(_chatList);
+          }).then(() => {
+            // 递归延迟1.5s添加聊天记录
+            const addChats = (_id?: number, index?: number) => {
+              console.log('_id', _id);
+              if (!_id)
+                return new Promise((resolve, reject) => {
+                  scrollToBottom();
+                  setTimeout(() => {
+                    resolve(1);
+                  }, 1500);
+                });
+              const responseInfo = getChatById(_id);
+              if (!responseInfo)
+                return new Promise((resolve, reject) => {
+                  scrollToBottom();
+                  setTimeout(() => {
+                    resolve(1);
+                  }, 1500);
+                });
+              // 推送聊天记录
+              pushChatList(index || _index, responseInfo);
+              return new Promise((resolve, reject) => {
+                scrollToBottom();
+                setTimeout(() => {
+                  resolve(addChats(responseInfo?.nextResponseId, index));
+                }, 1500);
+              });
+            };
+
+            // 触发下一个对话
+            if (item?.nextResponseId) {
+              addChats(item.nextResponseId, _index);
+            }
+
+            // 触发下一个章节
+            if (item?.nextChapterId) {
+              setChapterId(item.nextChapterId);
+              // 添加新的聊天人物
+              const newChapter = getChapter(item.nextChapterId);
+              const { addChatPages } = newChapter || {};
+              if (!addChatPages) {
+                return;
               }
-            })
-            .then(() => {
-              scrollToBottom();
-              setLoading(false);
-            });
+              if (addChatPages && addChatPages?.length) {
+                // TODO: 增量添加，不是直接覆盖
+                pushChatPageList(addChatPages);
+              }
+              // 给每个新增对话添加聊天记录
+              for (let i = 0; i < addChatPages.length; i++) {
+                const _item = addChatPages[i];
+                console.log('_item', _item);
+                const _chatList = _item?.chatList || [];
+                if (!_chatList?.length) continue;
+                const { nextResponseId } = _chatList[_chatList.length - 1];
+                addChats(nextResponseId, chatPageList.length + i);
+              }
+            }
+          });
         }}
       />
     </div>

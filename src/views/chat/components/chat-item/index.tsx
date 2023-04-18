@@ -5,7 +5,12 @@ import ChatBubble from '../chat-bubble';
 import styles from './index.module.scss';
 
 export interface ChatItemProps {
+  id?: number;
+  // 回答id
+  nextResponseId?: number;
+  // 联系人id
   contactsId?: number;
+  // 章节id
   chapterId?: number;
   name?: string;
   type?: 'chat' | 'my' | 'action';
