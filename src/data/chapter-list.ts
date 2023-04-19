@@ -89,7 +89,7 @@ export const chapterTree: ChapterTreeItem[] = [
             name: '林珀',
             area: '如意楼',
             type: 'chat',
-            info: '你因为识字不多，武功也基本不会，但看着高大威 猛有个好样儿，就给你分配到三级(最低级) 【如意郎】 队伍里吧！去认识一下，你的同伴吧',
+            info: '你因为识字不多，武功也基本不会，但看着高大威 猛有个好样儿，就给你分配到三级(最低级) 【如意郎】 队伍里吧！去认识一下，你的同伴和上级吧',
             time: '',
           },
         ],
@@ -103,6 +103,11 @@ export const chapterTree: ChapterTreeItem[] = [
         id: 5,
         name: '【如意郎】三级 小灰',
         area: '如意楼',
+      },
+      {
+        id: 6,
+        name: '【如意郎】主管 王溟',
+        area: '如意楼 阁居',
       },
     ],
   },
@@ -126,7 +131,7 @@ export const chapterTree: ChapterTreeItem[] = [
     ],
   },
   {
-    id: 9,
+    id: 21,
     addChatPages: [
       {
         id: 1,
@@ -134,10 +139,17 @@ export const chapterTree: ChapterTreeItem[] = [
         area: '如意楼',
         chatList: [
           {
-            id: 12,
+            id: 13,
             contactsId: 1,
             type: 'action',
-            info: '',
+            info: '因为你自小就来到了南京，南京话已经成为了你的语言，蒙古语你已经基本不会说了，也是由于你口音纯正、跑步速度快，【林珀】 和【王溟】经常都会安排你去接头，拿情报，夹个包袱送钱，但时间都是在半夜里。在任务过程中你从没跟其他人接触过。',
+            time: '来到如意楼这段时间',
+          },
+          {
+            id: 14,
+            contactsId: 1,
+            type: 'action',
+            info: '慢慢的，你知道了你们【如意楼】不简单，这里明面上是全南京城最大的青楼，其实是个情报贩卖机构，老板【林珀】更是了不得，传说中【如意楼】酒窖的密室里藏着各色毒药，还有无数朝廷命官、大明国内或其他国的隐秘资料，但你因为身份低微，从来没进去过。',
             time: '',
           },
         ],

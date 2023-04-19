@@ -211,6 +211,18 @@ const allActionList: ActionItem[] = [
     nextChapterId: 9,
   },
   {
+    contactsId: 6,
+    chapterId: 8,
+    chatData: {
+      contactsId: 5,
+      type: 'my',
+      info: '你好',
+      time: '',
+    },
+    nextResponseId: 34,
+    nextChapterId: 9,
+  },
+  {
     contactsId: 3,
     chapterId: 8,
     chatData: {
@@ -246,6 +258,18 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 2,
+    chapterId: 9,
+    chatData: {
+      contactsId: 2,
+      type: 'my',
+      info: '老板，那几个同伴好冷漠啊！',
+      time: '',
+    },
+    nextResponseId: 33,
+    nextChapterId: 17,
+  },
+  {
+    contactsId: 2,
     chapterId: 10,
     chatData: {
       contactsId: 2,
@@ -262,7 +286,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 2,
       type: 'action',
-      info: '正在努力学习点穴大法中...',
+      info: '学习点穴大法...',
       time: '',
     },
     nextChapterId: 19,
@@ -344,7 +368,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 3,
       type: 'my',
-      info: '今天真是晦气地一天呀，不过感觉点穴已经略有小成了',
+      info: '今天真是晦气的一天呀，不过感觉点穴已经略有小成了',
       time: '',
     },
     nextChapterId: 16
@@ -385,15 +409,62 @@ const allActionList: ActionItem[] = [
     nextChapterId: 18,
   },
   {
-    contactsId: 1,
+    contactsId: 6,
     chapterId: 18,
     chatData: {
-      contactsId: 3,
+      contactsId: 6,
       type: 'my',
-      info: '寻找【王溟】',
+      info: '王主管好呀，最近有什么任务适合我呀',
       time: '',
     },
     nextResponseId: 32,
+    nextChapterId: 19,
+  },
+  {
+    contactsId: 6,
+    chapterId: 19,
+    chatData: {
+      contactsId: 6,
+      type: 'my',
+      info: '好的呢！感谢王大主管！',
+      time: '',
+    },
+    nextResponseId: 35,
+    nextChapterId: 20,
+  },
+  {
+    contactsId: 6,
+    chapterId: 20,
+    chatData: {
+      contactsId: 6,
+      type: 'action',
+      info: '内心os：(妈卖批，这王主管，PUA有一手的..)',
+      time: '',
+    },
+    nextResponseId: 38,
+    nextChapterId: 21,
+  },
+  {
+    contactsId: 6,
+    chapterId: 20,
+    chatData: {
+      contactsId: 6,
+      type: 'my',
+      info: '好！保证对任务全心全意，永远服务于如意楼（拱手作揖）',
+      time: '',
+    },
+    nextResponseId: 37,
+    nextChapterId: 21,
+  },
+  {
+    contactsId: 6,
+    chapterId: 21,
+    chatData: {
+      contactsId: 6,
+      type: 'my',
+      info: '好的，王主管。那我走了',
+      time: '',
+    },
   },
 ];
 
