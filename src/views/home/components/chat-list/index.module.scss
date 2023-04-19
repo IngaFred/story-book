@@ -10,9 +10,11 @@
 .head_img {
   width: 80px;
   height: 80px;
-  margin: 20px;
   border: 2px solid #666;
   border-radius: 8px;
+}
+.head_img_wrap {
+  padding: 20px;
 }
 .name {
   text-align: start;
@@ -27,4 +29,12 @@
 .infos {
   text-align: start;
   width: 11rem;
+}
+:global {
+  .adm-badge-wrapper {
+    .adm-badge-content {
+      line-height: var(--adm-font-size-1);
+      padding: 4px 6px;
+    }
+  }
 }

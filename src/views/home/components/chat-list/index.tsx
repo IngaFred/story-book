@@ -24,13 +24,15 @@ function ChatList() {
             }}
             className={styles.list_item}
             left={
-              <Badge content={item?.badge}>
-                <img
-                  className={styles.head_img}
-                  src="/logo192.png"
-                  alt="头像"
-                />
-              </Badge>
+              <div className={styles.head_img_wrap}>
+                <Badge content={item?.badge}>
+                  <img
+                    className={styles.head_img}
+                    src="/logo192.png"
+                    alt="头像"
+                  />
+                </Badge>
+              </div>
             }
             right={
               <div className={styles.right}>
