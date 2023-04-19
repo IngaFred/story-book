@@ -265,11 +265,11 @@ const allActionList: ActionItem[] = [
       info: '正在努力学习点穴大法中...',
       time: '',
     },
-    nextChapterId: 10,
+    nextChapterId: 19,
   },
   {
     contactsId: 3,
-    chapterId: 10,
+    chapterId: 19,
     chatData: {
       contactsId: 3,
       type: 'my',
@@ -281,7 +281,7 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 3,
-    chapterId: 10,
+    chapterId: 19,
     chatData: {
       contactsId: 3,
       type: 'my',
