@@ -58,7 +58,6 @@ const allActionList: ActionItem[] = [
     chapterId: 4,
     chatData: {
       contactsId: 2,
-      chapterId: 4,
       type: 'my',
       info: '我是蒙古人，从小没爹没娘，就在这儿长大的，我烤羊肉串可厉害了',
       time: '',
@@ -71,7 +70,6 @@ const allActionList: ActionItem[] = [
     chapterId: 4,
     chatData: {
       contactsId: 2,
-      chapterId: 4,
       type: 'my',
       info: '关你P事',
       time: '',
@@ -83,7 +81,6 @@ const allActionList: ActionItem[] = [
     chapterId: 5,
     chatData: {
       contactsId: 2,
-      chapterId: 5,
       type: 'my',
       info: '请务必带带我',
       time: '',
@@ -96,7 +93,6 @@ const allActionList: ActionItem[] = [
     chapterId: 5,
     chatData: {
       contactsId: 2,
-      chapterId: 5,
       type: 'my',
       info: 'bye.bye.',
       time: '',
@@ -107,9 +103,8 @@ const allActionList: ActionItem[] = [
     chapterId: 6,
     chatData: {
       contactsId: 1,
-      chapterId: 6,
       type: 'my',
-      info: '成为【如意郎】',
+      info: '进入如意楼',
       time: '',
     },
     nextChapterId: 7,
@@ -119,7 +114,6 @@ const allActionList: ActionItem[] = [
     chapterId: 6,
     chatData: {
       contactsId: 3,
-      chapterId: 6,
       type: 'my',
       info: '救助小狗（需要学会点穴）',
       time: '',
@@ -131,7 +125,105 @@ const allActionList: ActionItem[] = [
     chapterId: 6,
     chatData: {
       contactsId: 3,
-      chapterId: 6,
+      type: 'my',
+      info: '你咋了铁子',
+      time: '',
+    },
+    nextResponseId: 11,
+  },
+  {
+    contactsId: 3,
+    chapterId: 7,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '救助小狗（需要学会点穴）',
+      time: '',
+    },
+    type: 'disabled',
+  },
+  {
+    contactsId: 3,
+    chapterId: 7,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '你咋了铁子',
+      time: '',
+    },
+    nextResponseId: 11,
+  },
+  {
+    contactsId: 2,
+    chapterId: 7,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '谢谢老板',
+      time: '',
+    },
+    nextChapterId: 8,
+  },
+  {
+    contactsId: 4,
+    chapterId: 7,
+    chatData: {
+      contactsId: 5,
+      type: 'my',
+      info: '你好',
+      time: '',
+    },
+    nextResponseId: 12,
+  },
+  {
+    contactsId: 5,
+    chapterId: 7,
+    chatData: {
+      contactsId: 5,
+      type: 'my',
+      info: '你好',
+      time: '',
+    },
+    nextResponseId: 13,
+  },
+  {
+    contactsId: 4,
+    chapterId: 8,
+    chatData: {
+      contactsId: 5,
+      type: 'my',
+      info: '你好',
+      time: '',
+    },
+    nextResponseId: 14,
+  },
+  {
+    contactsId: 5,
+    chapterId: 8,
+    chatData: {
+      contactsId: 5,
+      type: 'my',
+      info: '你好',
+      time: '',
+    },
+    nextResponseId: 15,
+  },
+  {
+    contactsId: 3,
+    chapterId: 8,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '救助小狗（需要学会点穴）',
+      time: '',
+    },
+    type: 'disabled',
+  },
+  {
+    contactsId: 3,
+    chapterId: 8,
+    chatData: {
+      contactsId: 3,
       type: 'my',
       info: '你咋了铁子',
       time: '',

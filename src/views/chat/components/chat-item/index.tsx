@@ -10,8 +10,6 @@ export interface ChatItemProps {
   nextResponseId?: number;
   // 联系人id
   contactsId?: number;
-  // 章节id
-  chapterId?: number;
   name?: string;
   type?: 'chat' | 'my' | 'action';
   info?: string;
