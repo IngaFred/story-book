@@ -599,7 +599,7 @@ const allActionList: ActionItem[] = [
       info: '妈蛋！🙄 我刚刚是不是应该冲上去，揩揩油啊！本就难得的仙女落水了，靠 真后悔..😌',
       time: '',
     },
-    nextResponseId: 44,
+    nextResponseId: 47,
     nextChapterId: 31,
   },
   {
@@ -657,7 +657,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '（反应过来的我，小脸一红）仙女你真的好美啊！ 我心跳的好快😚',
+      info: '（反应过来的我，小脸一红）仙女你真的好美啊！ 我心跳的好快🥰',
       time: '',
     },
     nextResponseId: 50,
@@ -669,7 +669,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '春风拂过泸沽湖，秋雨浸润九寨沟😀',
+      info: '看到你我感觉\'春风拂过泸沽湖，秋雨浸润九寨沟😀\'',
       time: '',
     },
     nextResponseId: 52,
@@ -693,23 +693,23 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '',
+      info: '你还好吗，身体没什么不舒服吧😟',
       time: '',
     },
-    nextResponseId: 53,
-    nextChapterId: 36,
+    nextResponseId: 58,
+    nextChapterId: 39,
   },
   {
     contactsId: 7,
-    chapterId: 35,
+    chapterId: 39,
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '',
+      info: '那你靠我身上，先歇息一会。 这位是？',
       time: '',
     },
-    nextResponseId: 53,
-    nextChapterId: 36,
+    nextResponseId: 59,
+    nextChapterId: 40,
   },
   {
     contactsId: 7,
@@ -717,7 +717,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '仙女下次在路上可一定要注意啊！刚刚真的把我吓到了',
+      info: '下次在路上可一定要注意啊！刚刚真的把我吓到了',
       time: '',
     },
     nextResponseId: 54,
@@ -737,6 +737,18 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 7,
+    chapterId: 37,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '好男人就是我，我就是布脱脱，当然你也可以叫我小布！我是不会介意的😁',
+      time: '',
+    },
+    nextResponseId: 57,
+    nextChapterId: 38,
+  },
+  {
+    contactsId: 7,
     chapterId: 38,
     chatData: {
       contactsId: 7,
@@ -745,6 +757,42 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     type: 'disabled'
+  },
+  {
+    contactsId: 7,
+    chapterId: 40,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '目前她，状态不是很好啊..扈扈，你现在也慢慢回复过来了，来搭把手，我们先一起送依依回去休息',
+      time: '',
+    },
+    nextResponseId: 60,
+    nextChapterId: 38,
+  },
+  {
+    contactsId: 7,
+    chapterId: 40,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '目前她，状态不是很好啊..扈扈，你现在也慢慢回复过来了，有手帕吗？过来帮依依她擦擦',
+      time: '',
+    },
+    nextResponseId: 60,
+    nextChapterId: 41,
+  },
+  {
+    contactsId: 7,
+    chapterId: 41,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '嗯！请相信我！🙂',
+      time: '',
+    },
+    // nextResponseId: 60,
+    nextChapterId: 38,
   },
   
 ];

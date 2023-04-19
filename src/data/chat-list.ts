@@ -332,13 +332,13 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     type: 'action',
     info: '仙女【依依】马上被身旁的侍女【扈扈】给拉起，匆匆离去',
-    nextResponseId: 47,
   },
   {
     id: 47,
     contactsId: 7,
     type: 'action',
     info: '【依依】不知何时回头看了一眼，这角落里的男人，眼中满是鄙夷',
+    nextResponseId: 44,
   },
   {
     id: 44,
@@ -379,7 +379,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '嗯~公子过奖了(本就娇红的玉面更是通红了) 🤭 公子，那边有个石凳，我们去那边先休息一会吧！您还喘着粗气呢',
+    info: '(闻言，本就娇红的玉面更是通红了，连忙低下头，不敢直视对方) 那..那边有个石凳，先..休息一会吧..',
     nextResponseId: 51,
   },
   {
@@ -387,6 +387,13 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     type: 'action',
     info: '我把大外衣脱下披在了【依依】身上，顺便还把吓得瘫倒在地上的侍女【扈扈】扶了起来，搀扶着二人，一起走向那大石凳',
+    nextResponseId: 58,
+  },
+  {
+    id: 58,
+    contactsId: 7,
+    type: 'chat',
+    info: '(感受到身上传来一阵阵温暖，脸颊越来越烫，小声说道) 谢谢你 😊',
   },
   {
     id: 52,
@@ -407,14 +414,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '嗯！(重重点头)谢谢公子的关心',
+    info: '嗯！(重重一点头) 谢谢公子的关心 😊',
   },
   {
     id: 55,
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '一点都不奇怪哦~ 倒不如说是很有趣呢！😃 我的名字是依依，小鸟依人的依。以后别叫我仙女啦，叫我依依吧，怪害羞的(鼓嘴脸红)',
+    info: '不，一点都不奇怪哦~ 布脱脱这个名字很好听😃 我的名字是依依，小鸟依人的依。以后别叫我仙女啦，叫我依依吧，怪害羞的(鼓嘴脸红)',
     nextResponseId: 56,
   },
   {
@@ -424,10 +431,45 @@ const allChatList: ChatItemProps[] = [
     type: 'chat',
     info: '这位是扈扈，刚刚真是吓到她了呢',
   },
+  {
+    id: 57,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '赫赫赫，公子真是有趣呢！😆 我是依依，你也可以叫我依儿。',
+    nextResponseId: 56,
+  },
 
-
-
-
+  // --
+  {
+    id: 58,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(听到对方关心自己，心中涌起一股暖意，抬头看向对方，只见对方正一脸担忧地看着自己) emm.. 我的头好晕..😵 想休息一会',
+  },
+  {
+    id: 59,
+    contactsId: 7,
+    name: '扈扈',
+    type: 'chat',
+    info: '(慢慢缓过神来) 嗷，我是扈扈。这位是我们家大小姐，依依。(看着瘫在我身上的依依) 大小姐她还好吧？😟',
+  },
+  {
+    id: 60,
+    contactsId: 7,
+    name: '扈扈',
+    type: 'chat',
+    info: '嗯，有！😟 (匆忙的掏出手帕，移过身子，仔细地给大小姐擦拭，拧去身上的水)',
+    nextResponseId: 61
+  },
+  {
+    id: 61,
+    contactsId: 7,
+    name: '扈扈',
+    type: 'chat',
+    info: '呜..这样也不是办法啊！这样，我先速速回去叫人抬得轿子来接大小姐回去。呜..你帮我照看一下大小姐，好吗？😢 (泪眼汪汪的看着我)',
+  },
 
 
 
