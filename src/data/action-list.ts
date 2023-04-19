@@ -661,7 +661,7 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     nextResponseId: 50,
-    nextChapterId: 36,
+    nextChapterId: 35,
   },
   {
     contactsId: 7,
@@ -696,7 +696,7 @@ const allActionList: ActionItem[] = [
       info: '你还好吗，身体没什么不舒服吧😟',
       time: '',
     },
-    nextResponseId: 58,
+    nextResponseId: 62,
     nextChapterId: 39,
   },
   {
@@ -764,10 +764,10 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '目前她，状态不是很好啊..扈扈，你现在也慢慢回复过来了，来搭把手，我们先一起送依依回去休息',
+      info: '目前她，状态不是很好啊...扈扈，你现在也慢慢回复过来了，来搭把手，我们先一起送依依回去休息',
       time: '',
     },
-    nextResponseId: 60,
+    // nextResponseId: 60,
     nextChapterId: 38,
   },
   {
@@ -776,7 +776,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '目前她，状态不是很好啊..扈扈，你现在也慢慢回复过来了，有手帕吗？过来帮依依她擦擦',
+      info: '目前她，状态不是很好啊...扈扈，你现在也慢慢回复过来了，有手帕吗？过来帮依依她擦擦',
       time: '',
     },
     nextResponseId: 60,
