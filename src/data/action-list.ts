@@ -164,6 +164,7 @@ const allActionList: ActionItem[] = [
     },
     nextChapterId: 8,
   },
+
   {
     contactsId: 4,
     chapterId: 7,
@@ -249,10 +250,22 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 2,
       type: 'my',
-      info: '谢谢老板',
+      info: '谢谢老板 啊！不对，谢谢师傅',
       time: '',
     },
     nextResponseId: 19,
+    nextChapterId: 11,
+  },
+  {
+    contactsId: 2,
+    chapterId: 11,
+    chatData: {
+      contactsId: 2,
+      type: 'action',
+      info: '正在努力学习点穴大法中...',
+      time: '',
+    },
+    nextChapterId: 10,
   },
   {
     contactsId: 3,
@@ -260,9 +273,11 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 3,
       type: 'my',
-      info: '使用点穴大法',
+      info: '使用刚学的点穴大法',
       time: '',
     },
+    nextResponseId: 21,
+    nextChapterId: 12,
   },
   {
     contactsId: 3,
@@ -274,6 +289,111 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     nextResponseId: 11,
+  },
+  {
+    contactsId: 3,
+    chapterId: 12,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '不好有杀意，快跑！',
+      time: '',
+    },
+    nextResponseId: 23,
+    nextChapterId: 13,
+  },
+  {
+    contactsId: 3,
+    chapterId: 12,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '哟~ 救了你还嚣张 小样！',
+      time: '',
+    },
+    nextResponseId: 24,
+    nextChapterId: 14
+  },
+  {
+    contactsId: 3,
+    chapterId: 13,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '芜湖！ 还好老子跑的快。这狗看着可怜，实着吓人的很呐',
+      time: '',
+    },
+    nextResponseId: 28,
+    nextChapterId: 15
+  },
+  {
+    contactsId: 3,
+    chapterId: 14,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '斯..卧槽！敢咬老子 吃我一大飞脚！',
+      time: '',
+    },
+    nextResponseId: 26,
+    nextChapterId: 15,
+  },
+  {
+    contactsId: 3,
+    chapterId: 15,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '今天真是晦气地一天呀，不过感觉点穴已经略有小成了',
+      time: '',
+    },
+    nextChapterId: 16
+  },
+  {
+    contactsId: 2,
+    chapterId: 16,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '师傅，我点穴功法已经小成了',
+      time: '',
+    },
+    nextResponseId: 29,
+    nextChapterId: 17,
+  },
+  {
+    contactsId: 2,
+    chapterId: 17,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '好勒',
+      time: '',
+    },
+    nextChapterId: 18,
+  },
+  {
+    contactsId: 2,
+    chapterId: 17,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '啊！ 可是，我想睡觉摆烂哎..',
+      time: '',
+    },
+    nextResponseId: 31,
+    nextChapterId: 18,
+  },
+  {
+    contactsId: 1,
+    chapterId: 18,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '寻找【王溟】',
+      time: '',
+    },
+    nextResponseId: 32,
   },
 ];
 

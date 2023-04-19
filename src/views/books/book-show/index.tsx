@@ -29,7 +29,7 @@ const books: Book[] = [
 		id: '1',
 		title: '《Dance》',
 		cover: dance,
-		info: '点击查看故事背景',
+		info: '点击观看小雨跳舞',
 		path: '',
 		background: danceBackGround,
 	},

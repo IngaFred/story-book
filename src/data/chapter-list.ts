@@ -67,8 +67,7 @@ export const chapterTree: ChapterTreeItem[] = [
           {
             contactsId: 3,
             type: 'action',
-            info: '你看见路边有一只小狗受伤了，血流不止',
-            area: '',
+            info: '你看见路边有一只小狗腿部受伤了，血流不止',
             time: '大明朝永乐六年（1408）',
             nextResponseId: 11,
           },
@@ -90,19 +89,19 @@ export const chapterTree: ChapterTreeItem[] = [
             name: '林珀',
             area: '如意楼',
             type: 'chat',
-            info: '你因为识字不多，武功也基本不会，但看着高大威 猛有个好样儿，就给你分配到三级(最低级) 【如意郎】 队伍里吧',
+            info: '你因为识字不多，武功也基本不会，但看着高大威 猛有个好样儿，就给你分配到三级(最低级) 【如意郎】 队伍里吧！去认识一下，你的同伴吧',
             time: '',
           },
         ],
       },
       {
         id: 4,
-        name: '三级【如意郎】小茶',
+        name: '【如意郎】三级 小茶',
         area: '如意楼',
       },
       {
         id: 5,
-        name: '三级【如意郎】小灰',
+        name: '【如意郎】三级 小灰',
         area: '如意楼',
       },
     ],
@@ -120,6 +119,25 @@ export const chapterTree: ChapterTreeItem[] = [
             contactsId: 1,
             type: 'action',
             info: '你成为了【如意郎】【如意郎】 分三个等级，等级之间地以武艺、文化、特长区分，只有同等级的【如意郎】们住在一个院内，互相之间也不过问别人的工作情况，不同等级的【如意郎】之间几乎不见面。',
+            time: '',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 9,
+    addChatPages: [
+      {
+        id: 1,
+        name: '主线',
+        area: '如意楼',
+        chatList: [
+          {
+            id: 12,
+            contactsId: 1,
+            type: 'action',
+            info: '',
             time: '',
           },
         ],

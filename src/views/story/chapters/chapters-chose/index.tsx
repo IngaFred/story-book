@@ -19,7 +19,7 @@ function Chose() {
 		{
 			id: '0',
 			name: '故事重选',
-			path: '/',
+			path: '/book',
 			children: [
 				{
 					id: '00',
