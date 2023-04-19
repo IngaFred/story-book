@@ -1,16 +1,14 @@
-@import '@/assets/styles/variables.scss';
-
 .all {
   margin: 20px;
   display: flex;
   flex-direction: column;
 }
-.item{
+.item {
   min-height: 30vh;
 }
-.itemDetail{
+.itemDetail {
   position: relative;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
   justify-content: flex-end;
   align-items: flex-end;
@@ -25,4 +23,3 @@
   text-align: center;
   word-wrap: break-word;
 }
-
