@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './index.module.scss';
 import Header from '@/components/header';
 import ChatItem, { ChatItemProps } from './components/chat-item';
@@ -21,7 +21,16 @@ export default function Chat() {
   const chatPage = chatPageList?.[_index] || {};
   const pushChatList = useBaseStore((state) => state.pushChatList);
   const pushChatListById = useBaseStore((state) => state.pushChatListById);
+  const setChatPageByIndex = useBaseStore((state) => state.setChatPageByIndex);
+
   const chatList: ChatItemProps[] = chatPage?.chatList || [];
+
+  useEffect(() => {
+    // 清空未读消息
+    setChatPageByIndex(_index, {
+      badge: 0,
+    });
+  }, []);
 
   /**
    * 滚动到底部
@@ -124,13 +133,22 @@ export default function Chat() {
               for (let i = 0; i < addChatPages.length; i++) {
                 const _item = addChatPages[i];
                 console.log('_item', _item);
+                console.log('chatPageList[_index]', chatPageList[_index]);
                 const _chatList = _item?.chatList || [];
                 if (!_chatList?.length) continue;
                 const { nextResponseId } = _chatList[_chatList.length - 1];
-                addChats({
-                  chatId: nextResponseId,
-                  chatPageId: _item?.id,
-                });
+
+                if (_item.id === chatPageList[_index].id) {
+                  addChats({
+                    chatId: nextResponseId,
+                    index: _index,
+                  });
+                } else {
+                  addChats({
+                    chatId: nextResponseId,
+                    chatPageId: _item?.id,
+                  });
+                }
               }
             }
           });

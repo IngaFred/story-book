@@ -25,7 +25,7 @@ function ChatList() {
             className={styles.list_item}
             left={
               <div className={styles.head_img_wrap}>
-                <Badge content={item?.badge}>
+                <Badge content={item?.badge || null}>
                   <img
                     className={styles.head_img}
                     src="/logo192.png"

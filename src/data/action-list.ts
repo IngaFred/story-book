@@ -107,13 +107,13 @@ const allActionList: ActionItem[] = [
 export const defaultActionList: ActionItem[] = [
   {
     chatData: {
-      info: '你无法与他交流',
+      info: '暂时无法交流，去别处看看吧',
     },
     type: 'disabled',
   },
 ];
 
-export const getActionList = (contactsId: number, chapterId: number) => {
+export const getActionList = (contactsId?: number, chapterId?: number) => {
   const list = allActionList.filter(
     (item) => item.contactsId === contactsId && item.chapterId === chapterId
   );

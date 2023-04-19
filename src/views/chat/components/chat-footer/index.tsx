@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import type { ActionItem } from '@/data/action-list';
 
 import styles from './index.module.scss';
+import { Ellipsis } from 'antd-mobile';
 
 export interface ChatFooterProps {
   [key: string]: any;
@@ -58,12 +59,20 @@ function ChatFooter(props: ChatFooterProps) {
               );
             })
           ) : (
-            <div
-              className={styles.chat_btn}
+            <ChatBtn
               onClick={() => {
                 setActive(true);
               }}
-            ></div>
+              active={selectedAction === 0}
+              item={actionList[0]}
+              close
+            />
+            // <div
+            //   className={styles.chat_btn}
+            //   onClick={() => {
+            //     setActive(true);
+            //   }}
+            // ></div>
           )}
         </div>
       </div>
@@ -73,24 +82,33 @@ function ChatFooter(props: ChatFooterProps) {
 interface ChatBtnProps {
   [key: string]: any;
   item: ActionItem;
+  active: boolean;
+  onCheck?: () => void;
+  onConfirm?: () => void;
+  close?: boolean;
 }
 const ChatBtn = (props: ChatBtnProps) => {
-  const { item, onConfirm, active, onCheck } = props;
+  const { item, onConfirm, active, onCheck, onClick, close } = props;
   return (
     <div
       className={classnames(styles.chat_btn, {
         [styles.active_btn]: active,
-        [styles.disabled_btn]: item?.type === 'disabled',
+        [styles.disabled_btn]: item?.type === 'disabled' || close,
       })}
-      onClick={() => {
+      onClick={(e) => {
+        onClick?.(e);
         if (active) {
-          onConfirm();
+          onConfirm?.();
           return;
         }
-        onCheck();
+        onCheck?.();
       }}
     >
-      {item?.chatData?.info}
+      {close ? (
+        <Ellipsis direction="end" content={String(item?.chatData?.info)} />
+      ) : (
+        item?.chatData?.info
+      )}
     </div>
   );
 };

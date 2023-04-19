@@ -24,7 +24,7 @@ export const chapterTree: ChapterTreeItem[] = [
         id: 2,
         name: '林珀',
         area: '大漠',
-        badge: 3,
+        badge: 1,
         chatList: [
           {
             contactsId: 2,
