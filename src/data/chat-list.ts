@@ -431,8 +431,6 @@ const allChatList: ChatItemProps[] = [
 
 
 
-
-
   {
     // id: 22,
     contactsId: 1,

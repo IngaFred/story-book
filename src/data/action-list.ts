@@ -491,7 +491,7 @@ const allActionList: ActionItem[] = [
     contactsId: 1,
     chapterId: 23,
     chatData: {
-      contactsId: 6,
+      contactsId: 1,
       type: 'my',
       info: '哎呀，我真是傻波一了。这里可是所有男人梦寐以求的青楼啊！有无数妙龄美女哎！',
       time: '',
@@ -502,10 +502,21 @@ const allActionList: ActionItem[] = [
     contactsId: 1,
     chapterId: 24,
     chatData: {
-      contactsId: 6,
+      contactsId: 1,
       type: 'my',
       info: 'emm 走！去【如意楼后楼】看美女',
       time: '',
+    },
+    nextChapterId: 26,
+  },
+  {
+    contactsId: 7,
+    chapterId: 26,
+    chatData: {
+      contactsId: 7,
+      type: 'action',
+      info: '两位美人在后楼池塘处赏荷花，这一位我记得是琴姬【依依】，她旁边还有一人，是她的侍女【扈扈】',
+      time: '炎炎夏日下',
     },
     nextChapterId: 25,
   },
@@ -516,22 +527,20 @@ const allActionList: ActionItem[] = [
       contactsId: 7,
       type: 'my',
       info: '哇咔咔 这位仙女，真的好美啊！我真是一眼沉沦 😳',
-      time: '夕阳下',
-      area: '后楼池塘小角落',
-    },
-    nextChapterId: 26,
-  },
-  {
-    contactsId: 8,
-    chapterId: 26,
-    chatData: {
-      contactsId: 8,
-      type: 'my',
-      info: '虽然有听说她挺奇怪的，但是真的好可爱哎',
-      time: '夕阳下',
       area: '后楼池塘小角落',
     },
     nextChapterId: 27,
+  },
+  {
+    contactsId: 8,
+    chapterId: 25,
+    chatData: {
+      contactsId: 8,
+      type: 'my',
+      info: '虽然有听说她挺奇怪的，但是也怪可爱的哎',
+      area: '后楼池塘小角落',
+    },
+    // 扈扈剧情
   },
   {
     contactsId: 7,
@@ -664,7 +673,7 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     nextResponseId: 52,
-    nextChapterId: 35,
+    nextChapterId: 36,
   },
   {
     contactsId: 7,
@@ -737,6 +746,7 @@ const allActionList: ActionItem[] = [
     },
     type: 'disabled'
   },
+  
 ];
 
 export const defaultActionList: ActionItem[] = [
