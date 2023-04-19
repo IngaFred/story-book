@@ -63,7 +63,6 @@ function ChatFooter(props: ChatFooterProps) {
               onClick={() => {
                 setActive(true);
               }}
-              active={selectedAction === 0}
               item={actionList[0]}
               close
             />
@@ -82,7 +81,7 @@ function ChatFooter(props: ChatFooterProps) {
 interface ChatBtnProps {
   [key: string]: any;
   item: ActionItem;
-  active: boolean;
+  active?: boolean;
   onCheck?: () => void;
   onConfirm?: () => void;
   close?: boolean;
@@ -93,7 +92,8 @@ const ChatBtn = (props: ChatBtnProps) => {
     <div
       className={classnames(styles.chat_btn, {
         [styles.active_btn]: active,
-        [styles.disabled_btn]: item?.type === 'disabled' || close,
+        [styles.disabled_btn]: item?.type === 'disabled',
+        [styles.closed_btn]: close,
       })}
       onClick={(e) => {
         onClick?.(e);

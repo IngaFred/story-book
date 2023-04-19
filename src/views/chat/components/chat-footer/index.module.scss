@@ -51,6 +51,11 @@
 }
 .disabled_btn {
   color: var(--desc-color);
+  background-color: #eee;
+}
+.closed_btn {
+  color: var(--desc-color);
+  background-color: #fff;
 }
 .action_list {
   width: 100%;

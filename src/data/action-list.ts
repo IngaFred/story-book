@@ -102,6 +102,42 @@ const allActionList: ActionItem[] = [
       time: '',
     },
   },
+  {
+    contactsId: 1,
+    chapterId: 6,
+    chatData: {
+      contactsId: 1,
+      chapterId: 6,
+      type: 'my',
+      info: '成为【如意郎】',
+      time: '',
+    },
+    nextChapterId: 7,
+  },
+  {
+    contactsId: 3,
+    chapterId: 6,
+    chatData: {
+      contactsId: 3,
+      chapterId: 6,
+      type: 'my',
+      info: '救助小狗（需要学会点穴）',
+      time: '',
+    },
+    type: 'disabled',
+  },
+  {
+    contactsId: 3,
+    chapterId: 6,
+    chatData: {
+      contactsId: 3,
+      chapterId: 6,
+      type: 'my',
+      info: '你咋了铁子',
+      time: '',
+    },
+    nextResponseId: 11,
+  },
 ];
 
 export const defaultActionList: ActionItem[] = [

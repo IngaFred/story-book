@@ -96,6 +96,15 @@ const allChatList: ChatItemProps[] = [
   },
   {
     id: 11,
+    contactsId: 3,
+    chapterId: 6,
+    name: '小黑狗',
+    type: 'chat',
+    info: '汪..呜呜',
+    time: '',
+  },
+  {
+    id: 21,
     contactsId: 1,
     chapterId: 5,
     type: 'action',
@@ -104,7 +113,7 @@ const allChatList: ChatItemProps[] = [
     time: '大明朝永乐六年（1408）',
   },
   {
-    id: 12,
+    id: 22,
     contactsId: 1,
     chapterId: 6,
     type: 'action',

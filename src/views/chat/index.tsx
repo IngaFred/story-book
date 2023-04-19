@@ -30,6 +30,7 @@ export default function Chat() {
     setChatPageByIndex(_index, {
       badge: 0,
     });
+    scrollToBottom();
   }, []);
 
   /**

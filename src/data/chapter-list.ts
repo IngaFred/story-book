@@ -59,6 +59,23 @@ export const chapterTree: ChapterTreeItem[] = [
           },
         ],
       },
+      {
+        id: 3,
+        name: '路边的小黑狗',
+        area: '城里',
+        badge: 1,
+        chatList: [
+          {
+            contactsId: 3,
+            chapterId: 6,
+            type: 'action',
+            info: '你看见路边有一只小狗受伤了，血流不止',
+            area: '',
+            time: '大明朝永乐六年（1408）',
+            nextResponseId: 11,
+          },
+        ],
+      },
     ],
   },
 ];
