@@ -96,17 +96,17 @@ export const chapterTree: ChapterTreeItem[] = [
       },
       {
         id: 4,
-        name: '【如意郎】三级 小茶',
+        name: '【如意郎】小茶',
         area: '如意楼',
       },
       {
         id: 5,
-        name: '【如意郎】三级 小灰',
+        name: '【如意郎】小灰',
         area: '如意楼',
       },
       {
         id: 6,
-        name: '【如意郎】主管 王溟',
+        name: '【主管】 王溟',
         area: '如意楼 阁居',
       },
     ],
@@ -153,6 +153,35 @@ export const chapterTree: ChapterTreeItem[] = [
             time: '',
           },
         ],
+      },
+    ],
+  },
+  {
+    id: 24,
+    addChatPages: [
+      {
+        id: 1,
+        name: '主线',
+        area: '如意楼',
+        chatList: [
+          {
+            id: 15,
+            contactsId: 1,
+            type: 'action',
+            info: '在【如意楼】里漂亮姑娘有很多，最美的可算是琴姬【依依】了，听说她只给达官显贵弹琴。还有一位使唤丫头【扈扈】，她总是做出神神秘秘的举动，令人捉摸不透。',
+            time: '',
+          },
+        ],
+      },
+      {
+        id: 7,
+        name: '【琴姬】 依依',
+        area: '如意楼 后楼',
+      },
+      {
+        id: 8,
+        name: '【丫头】 扈扈',
+        area: '如意楼 后楼',
       },
     ],
   },

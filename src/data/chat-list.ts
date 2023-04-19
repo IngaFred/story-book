@@ -267,7 +267,6 @@ const allChatList: ChatItemProps[] = [
     name: '王溟',
     type: 'chat',
     info: '小伙子，你好呀！我还有事就先走了',
-    nextResponseId: 30,
   },
   {
     id: 35,
@@ -307,10 +306,124 @@ const allChatList: ChatItemProps[] = [
     type: 'chat',
     info: '啊 对了，你今天就凌晨时，去城东头第二棵歪脖树下的垃圾桶里拿一个黑布包着的小盒子，切记别人看到啊！',
   },
-
-
-
-
+  {
+    id: 40,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '呜呼 啊！',
+  },
+  {
+    id: 41,
+    contactsId: 7,
+    type: 'action',
+    info: '我拿出了平生最快的速度奔去，跳入水中',
+    nextResponseId: 42,
+  },
+  {
+    id: 42,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '公子 救我！😧 啊 咕噜咕噜..',
+  },
+  {
+    id: 43,
+    contactsId: 7,
+    type: 'action',
+    info: '仙女【依依】马上被身旁的侍女【扈扈】给拉起，匆匆离去',
+    nextResponseId: 47,
+  },
+  {
+    id: 47,
+    contactsId: 7,
+    type: 'action',
+    info: '【依依】不知何时回头看了一眼，这角落里的男人，眼中满是鄙夷',
+  },
+  {
+    id: 44,
+    contactsId: 7,
+    type: 'action',
+    info: '又看了一段时间美女',
+  },
+  {
+    id: 45,
+    contactsId: 7,
+    type: 'action',
+    info: '我很大力的拍打着水面，用尽最大的速度去接近仙女。终于！仙女被我抱住，带上了岸边。',
+    nextResponseId: 46,
+  },
+  {
+    id: 46,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(在我怀中娇羞的看着我) 公子..真的是感谢您了😊 咳咳..',
+  },
+  {
+    id: 48,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '嗯！(裹紧大衣) 真的是太感谢公子您了。公子那边有个石凳，我们去那边先休息一会吧！您还喘着粗气呢',
+    nextResponseId: 49,
+  },
+  {
+    id: 49,
+    contactsId: 7,
+    type: 'action',
+    info: '吓得瘫倒在地上的侍女【扈扈】也回过神来了，立马起身，也帮忙搀扶着【依依】。一起走向那大石凳',
+  },
+  {
+    id: 50,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '嗯~公子过奖了(本就娇红的玉面更是通红了) 🤭 公子，那边有个石凳，我们去那边先休息一会吧！您还喘着粗气呢',
+    nextResponseId: 51,
+  },
+  {
+    id: 51,
+    contactsId: 7,
+    type: 'action',
+    info: '我把大外衣脱下披在了【依依】身上，顺便还把吓得瘫倒在地上的侍女【扈扈】扶了起来，搀扶着二人，一起走向那大石凳',
+  },
+  {
+    id: 52,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '公子真是多才呀🤭 (娇红的脸颊下勾起一抹动人心弦的灿笑)',
+  },
+  {
+    id: 53,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '公子真是过誉了呢，小女子可担当不起呢 😊(害羞的把小脑袋给低下了)',
+  },
+  {
+    id: 54,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '嗯！(重重点头)谢谢公子的关心',
+  },
+  {
+    id: 55,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '一点都不奇怪哦~ 倒不如说是很有趣呢！😃 我的名字是依依，小鸟依人的依。以后别叫我仙女啦，叫我依依吧，怪害羞的(鼓嘴脸红)',
+    nextResponseId: 56,
+  },
+  {
+    id: 56,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '这位是扈扈，刚刚真是吓到她了呢',
+  },
 
 
 
