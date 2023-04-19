@@ -207,6 +207,7 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     nextResponseId: 15,
+    nextChapterId: 9,
   },
   {
     contactsId: 3,
@@ -222,6 +223,50 @@ const allActionList: ActionItem[] = [
   {
     contactsId: 3,
     chapterId: 8,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '你咋了铁子',
+      time: '',
+    },
+    nextResponseId: 11,
+  },
+  {
+    contactsId: 2,
+    chapterId: 9,
+    chatData: {
+      contactsId: 2,
+      type: 'my',
+      info: '老板，你能不能教我一点武功呀？',
+      time: '',
+    },
+    nextResponseId: 17,
+    nextChapterId: 10,
+  },
+  {
+    contactsId: 2,
+    chapterId: 10,
+    chatData: {
+      contactsId: 2,
+      type: 'my',
+      info: '谢谢老板',
+      time: '',
+    },
+    nextResponseId: 19,
+  },
+  {
+    contactsId: 3,
+    chapterId: 10,
+    chatData: {
+      contactsId: 3,
+      type: 'my',
+      info: '使用点穴大法',
+      time: '',
+    },
+  },
+  {
+    contactsId: 3,
+    chapterId: 10,
     chatData: {
       contactsId: 3,
       type: 'my',
