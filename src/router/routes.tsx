@@ -20,7 +20,7 @@ const Myself = lazy(() => import('@/views/myself'));
 export const routes: RouteObject[] = [
   {
     path: '/',
-    element: <Navigate to="/book" />,
+    element: <Navigate to="/home" />,
   },
   {
     path: '/home',
