@@ -479,7 +479,7 @@ const allChatList: ChatItemProps[] = [
   },
   {
     id: 64,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     time: '过了一会儿',
@@ -487,14 +487,14 @@ const allChatList: ChatItemProps[] = [
   },
   {
     id: 65,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '唔..好温暖啊 (缓缓睁开双眼，看到我这般，顿时感觉心里暖暖的，眼睛一酸，眼泪忍不住流了下来) 😢',
   },
   {
     id: 66,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(抽泣着擦干眼泪，看着眼前这个英俊潇洒、善良体贴的男子，内心深处不禁涌起一股冲动)',
@@ -502,7 +502,7 @@ const allChatList: ChatItemProps[] = [
   },
   {
     id: 67,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(鼓起勇气，一把抱住对方，将脑袋埋进对方怀里。感受到胸口处传来一阵温热，脸上顿时变得通红，整个身体都变得活热起来了)',
@@ -510,14 +510,14 @@ const allChatList: ChatItemProps[] = [
   },
   {
     id: 68,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(抬起头，看着布脱脱那张英俊帅气、棱角分明的脸庞，眼神逐渐变得迷离)',
   },
   {
     id: 69,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(慢慢伸出手，抚摸着布脱脱那棱角分明、富有肌肉感的脸庞，脸上露出一抹痴迷，可人的红唇吞吐着热气，慢慢靠近)',
@@ -525,21 +525,21 @@ const allChatList: ChatItemProps[] = [
   },
   {
     id: 70,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'action',
     info: '🥵',
   },
   {
     id: 71,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(突然回过神来，意识到自己刚才做了什么，顿时羞得满脸通红，连忙松开手，低下头，不敢直视对方)',
   },
   {
     id: 72,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(听到布脱脱喊自己，心中一慌，连忙抬起头，用那双水汪汪的大眼睛盯着对方)',
@@ -547,38 +547,200 @@ const allChatList: ChatItemProps[] = [
   // 
   {
     id: 73,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
     info: '(感受到布脱脱身上散发出来浓烈男子气息，心脏跳得更快，呼吸也变得急促起来)',
   },
   {
     id: 74,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(唇边传来一阵温热，下意识地闭上眼睛)',
+    info: '(唇边传来一阵温热，下意识地闭上了眼睛)',
     nextResponseId: 75
   },
   {
     id: 75,
-    contactsId: 8,
+    contactsId: 7,
     name: '依依',
     type: 'action',
     info: '🥵',
   },
-
-
-
-
-
-
-
-
-
-
-
-
+  {
+    id: 76,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(突然，感觉自己身体变得轻飘飘，仿佛置身于云端，浑身上下说不出来的舒服)',
+    nextResponseId: 77
+  },
+  {
+    id: 77,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(闭上眼睛，跟随着本能，静静享受着这种奇妙感觉)',
+    nextResponseId: 78
+  },
+  {
+    id: 78,
+    contactsId: 7,
+    name: '依依',
+    type: 'action',
+    info: '😚',
+  },
+  {
+    id: 79,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(二人几乎同时对视，看到布脱脱那双深邃迷人、充满柔情蜜意的双眼，心中不禁又是一阵悸动) 😍',
+    nextResponseId: 80
+  },
+  {
+    id: 79,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(慢慢抬起右手，放在布脱脱胸口处，感受到那强有力跳动，脸上露出一抹满足笑容)',
+    nextResponseId: 80
+  },
+  {
+    id: 80,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(突然，一股强有力的\'气流\'从手掌心传入体内，酥酥麻麻，紧接着便感到浑身燥热，小腹下处更是传来一阵强烈欲望)',
+  },
+  {
+    id: 81,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(感觉身体仿佛被火烧一般，下意识伸手解开衣服。)',
+    nextResponseId: 82
+  },
+  {
+    id: 82,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(很快，身上便只剩下一件赤红色肚兜，露出大片雪白肌肤)',
+  },
+  {
+    id: 83,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(双手紧紧抱住布脱脱，仿佛要将对方融入身体一般)',
+    nextResponseId: 84
+  },
+  {
+    id: 84,
+    contactsId: 7,
+    name: '依依',
+    type: 'action',
+    info: '🥵',
+    nextResponseId: 85
+  },
+  {
+    id: 85,
+    contactsId: 7,
+    type: 'action',
+    info: '随着时间推移，两人身上衣物越来越少，逐渐坦诚相见',
+    nextResponseId: 86
+  },
+  {
+    id: 86,
+    contactsId: 7,
+    type: 'action',
+    info: '此时，布脱脱已经完全迷失自我，只剩下本能欲望',
+    nextResponseId: 87
+  },
+  {
+    id: 87,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(紧紧抱住对方，将脑袋埋进对方怀里，享受着这美妙时刻！ 声浪也在这空旷密林，此起彼伏 )',
+    nextResponseId: 88
+  },
+  {
+    id: 88,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(感受到身体传来阵阵酥麻，顿时感到一阵空虚乏力，忍不住大口喘气~)',
+  },
+  {
+    id: 89,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(抬起头，看向布脱脱，只见对方此时正双眼迷离，满脸通红，呼吸急促，失了智一般)',
+    nextResponseId: 90
+  },
+  {
+    id: 90,
+    contactsId: 7,
+    type: 'action',
+    time: '时间一分一秒过去',
+    nextResponseId: 91
+  },
+  {
+    id: 91,
+    contactsId: 9,
+    name: '依依的老母亲',
+    type: 'chat',
+    info: '呔！😱 呔！😱 呔！😱',
+    nextResponseId: 92
+  },
+  {
+    id: 92,
+    contactsId: 9,
+    name: '依依的老母亲',
+    type: 'chat',
+    info: '你个下贱的杂役！！！',
+    nextResponseId: 93
+  },
+  {
+    id: 93,
+    contactsId: 7,
+    name: '依依的老母亲',
+    type: 'action',
+    info: '😡',
+  },
+  {
+    id: 94,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '( 瞬间清醒过来，慌乱中扯些衣物在身上。看到布脱脱正站在自己身边，只穿着一件贴身小裤衩，似被雷劈了一般！)',
+    nextResponseId: 95
+  },
+  {
+    id: 95,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '( 脸颊红得仿佛要滴出血来，不敢抬头看母亲，低头，只见自己身无寸缕，下身早已泥泞不堪！)',
+    nextResponseId: 96
+  },
+  {
+    id: 96,
+    contactsId: 7,
+    name: '扈扈',
+    type: 'chat',
+    info: '啊啊啊啊啊啊！😱',
+    nextResponseId: 97
+  },
+  {
+    id: 97,
+    contactsId: 9,
+    type: 'action',
+    info: '啪嗒啪嗒...不一会儿，又有一群人抬着轿子，进入林中',
+  },
 
 
 
