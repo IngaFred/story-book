@@ -842,6 +842,17 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 7,
+    chapterId: 44,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(看着依依)',
+    },
+    nextResponseId: 69,
+    nextChapterId: 47,
+  },
+  {
+    contactsId: 7,
     chapterId: 45,
     chatData: {
       contactsId: 7,
@@ -864,17 +875,6 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 7,
-    chapterId: 44,
-    chatData: {
-      contactsId: 7,
-      type: 'my',
-      info: '(看着依依)',
-    },
-    nextResponseId: 69,
-    nextChapterId: 45,
-  },
-  {
-    contactsId: 7,
     chapterId: 47,
     chatData: {
       contactsId: 7,
@@ -890,12 +890,86 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '',
+      info: '(闭上眼睛，右手掌猛地托住依依的后脑，左手拦腰拥住，人更贴近！)',
     },
-    nextResponseId: 73,
-    nextChapterId: 48,
+    nextResponseId: 76,
+    nextChapterId: 49,
   },
-// 48
+  {
+    contactsId: 7,
+    chapterId: 49,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(不知过了多久，感觉身上越来越热，慢慢睁开了眼睛)',
+    },
+    nextResponseId: 79,
+    nextChapterId: 50,
+  },
+  {
+    contactsId: 7,
+    chapterId: 50,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '我忍不住了 啊！！(野兽般低沉的吼叫)',
+    },
+    nextResponseId: 81,
+    nextChapterId: 51,
+  },
+  {
+    contactsId: 7,
+    chapterId: 51,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(抬起右手，猛地将肚兜掀开，露出一抹诱人沟壑)',
+    },
+    nextChapterId: 52,
+  },
+  {
+    contactsId: 7,
+    chapterId: 52,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(看着面前那道诱人沟壑，眼神变得炙热起来，慢慢低下头，将嘴唇印在上面)',
+    },
+    nextResponseId: 83,
+    nextChapterId: 53,
+  },
+  {
+    contactsId: 7,
+    chapterId: 53,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '啊~~嗷！',
+    },
+    nextResponseId: 89,
+    nextChapterId: 54,
+  },
+  {
+    contactsId: 7,
+    chapterId: 54,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '...！！！！！！',
+    },
+    nextChapterId: 55,
+  },
+  {
+    contactsId: 7,
+    chapterId: 55,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(一个暴跳起来！立马给依依披上外衣遮住，然后自己拉条裤衩 看着那位怒目婆婆，一动不动！)',
+    },
+    nextResponseId: 94,
+    nextChapterId: 38,
+  },
 ];
 
 export const defaultActionList: ActionItem[] = [

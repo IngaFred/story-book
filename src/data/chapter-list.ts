@@ -199,6 +199,30 @@ export const chapterTree: ChapterTreeItem[] = [
       },
     ],
   },
+  {
+    id: 53,
+    addChatPages: [
+      {
+        id: 1,
+        name: '主线',
+        area: '如意楼',
+        chatList: [
+          // {
+          //   id: 15,
+          //   contactsId: 1,
+          //   type: 'action',
+          //   info: '在【如意楼】里漂亮姑娘有很多，最美的可算是琴姬【依依】了，听说她只给达官显贵弹琴。她还有一位使唤丫头【扈扈】，她总是做出神神秘秘的举动，令人捉摸不透。',
+          //   time: '',
+          // },
+        ],
+      },
+      {
+        id: 9,
+        name: '【依依的老母亲】',
+        area: '如意楼 后楼',
+      },
+    ],
+  },
 ];
 
 export const getChapter = (id: number) => {
