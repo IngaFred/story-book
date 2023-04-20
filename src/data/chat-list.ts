@@ -470,7 +470,99 @@ const allChatList: ChatItemProps[] = [
     type: 'chat',
     info: '呜..这样也不是办法啊！这样，我先速速回去叫人抬轿子来接大小姐回去。呜..你帮我照看一下大小姐，好吗？😢 (泪眼汪汪的看着我)',
   },
-  // 63
+  {
+    id: 63,
+    contactsId: 8,
+    type: 'action',
+    info: '扈扈急匆匆地离去了，留下我和依依二人，独处林中。你虽喜好美女，但也绝非好色霄小之徒！',
+    nextResponseId: 64
+  },
+  {
+    id: 64,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    time: '过了一会儿',
+    info: '唔..好冷，好冷 (身体发颤着..)',
+  },
+  {
+    id: 65,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '唔..好温暖啊 (缓缓睁开双眼，看到我这般，顿时感觉心里暖暖的，眼睛一酸，眼泪忍不住流了下来) 😢',
+  },
+  {
+    id: 66,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(抽泣着擦干眼泪，看着眼前这个英俊潇洒、善良体贴的男子，内心深处不禁涌起一股冲动)',
+    nextResponseId: 67
+  },
+  {
+    id: 67,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(鼓起勇气，一把抱住对方，将脑袋埋进对方怀里。感受到胸口处传来一阵温热，脸上顿时变得通红，整个身体都变得活热起来了)',
+    nextResponseId: 68
+  },
+  {
+    id: 68,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(抬起头，看着布脱脱那张英俊帅气、棱角分明的脸庞，眼神逐渐变得迷离)',
+  },
+  {
+    id: 69,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(慢慢伸出手，抚摸着布脱脱那棱角分明、富有肌肉感的脸庞，脸上露出一抹痴迷，可人的红唇吞吐着热气，慢慢靠近)',
+    nextResponseId: 70
+  },
+  {
+    id: 70,
+    contactsId: 8,
+    name: '依依',
+    type: 'action',
+    info: '🥵',
+  },
+  {
+    id: 71,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(突然回过神来，意识到自己刚才做了什么，顿时羞得满脸通红，连忙松开手，低下头，不敢直视对方)',
+  },
+  {
+    id: 72,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(听到布脱脱喊自己，心中一慌，连忙抬起头，用那双水汪汪的大眼睛盯着对方)',
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

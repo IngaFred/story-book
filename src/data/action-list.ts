@@ -757,6 +757,7 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     type: 'disabled'
+    // nextChapterId: 40
   },
   {
     contactsId: 7,
@@ -791,10 +792,77 @@ const allActionList: ActionItem[] = [
       info: '嗯！请相信我！🙂',
       time: '',
     },
-    // nextResponseId: 60,
+    nextResponseId: 63,
+    nextChapterId: 42,
+  },
+  {
+    contactsId: 7,
+    chapterId: 42,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(凝重地看着她，思考了片刻) 依依姑娘得罪了！(将依依姑娘抱住，给她更多温暖)',
+      time: '',
+    },
+    nextResponseId: 65,
+    nextChapterId: 43,
+  },
+  {
+    contactsId: 7,
+    chapterId: 43,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '别哭呀 依依',
+    },
+    // nextResponseId: 65,
     nextChapterId: 38,
   },
-  
+  {
+    contactsId: 7,
+    chapterId: 43,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(看着依依)',
+    },
+    nextResponseId: 66,
+    nextChapterId: 44,
+  },
+  {
+    contactsId: 7,
+    chapterId: 44,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '呃...',
+    },
+    nextResponseId: 69,
+    nextChapterId: 45,
+  },
+  {
+    contactsId: 7,
+    chapterId: 45,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '姑娘',
+    },
+    nextResponseId: 71,
+    nextChapterId: 46,
+  },
+  {
+    contactsId: 7,
+    chapterId: 46,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '依依姑娘！',
+    },
+    nextResponseId: 72,
+    nextChapterId: 47,
+  },
+
 ];
 
 export const defaultActionList: ActionItem[] = [
