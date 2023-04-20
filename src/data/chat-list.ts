@@ -551,6 +551,7 @@ const allChatList: ChatItemProps[] = [
     name: '依依',
     type: 'chat',
     info: '(感受到布脱脱身上散发出来浓烈男子气息，心脏跳得更快，呼吸也变得急促起来)',
+    nextResponseId: 74
   },
   {
     id: 74,
@@ -596,10 +597,10 @@ const allChatList: ChatItemProps[] = [
     name: '依依',
     type: 'chat',
     info: '(二人几乎同时对视，看到布脱脱那双深邃迷人、充满柔情蜜意的双眼，心中不禁又是一阵悸动) 😍',
-    nextResponseId: 80
+    nextResponseId: 98
   },
   {
-    id: 79,
+    id: 98,
     contactsId: 7,
     name: '依依',
     type: 'chat',
@@ -741,8 +742,7 @@ const allChatList: ChatItemProps[] = [
     type: 'action',
     info: '啪嗒啪嗒...不一会儿，又有一群人抬着轿子，进入林中',
   },
-
-
+  // 99
 
 
 

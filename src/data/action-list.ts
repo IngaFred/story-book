@@ -965,7 +965,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '(一个暴跳起来！立马给依依披上外衣遮住，然后自己拉条裤衩 看着那位怒目婆婆，一动不动！)',
+      info: '(一个暴跳起来！立马给依依披上外衣遮住，然后自己拉条裤衩 在那位怒目婆婆的注视下，一动不动！)',
     },
     nextResponseId: 94,
     nextChapterId: 38,
