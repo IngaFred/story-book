@@ -544,14 +544,29 @@ const allChatList: ChatItemProps[] = [
     type: 'chat',
     info: '(听到布脱脱喊自己，心中一慌，连忙抬起头，用那双水汪汪的大眼睛盯着对方)',
   },
-  // {
-  //   id: 72,
-  //   contactsId: 8,
-  //   name: '依依',
-  //   type: 'chat',
-  //   info: '(感受到唇边传来一阵温热，呼吸也变得急促起来，下意识地闭上眼睛，勾在脖子上的手)',
-  // },
-
+  // 
+  {
+    id: 73,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(感受到布脱脱身上散发出来浓烈男子气息，心脏跳得更快，呼吸也变得急促起来)',
+  },
+  {
+    id: 74,
+    contactsId: 8,
+    name: '依依',
+    type: 'chat',
+    info: '(唇边传来一阵温热，下意识地闭上眼睛)',
+    nextResponseId: 75
+  },
+  {
+    id: 75,
+    contactsId: 8,
+    name: '依依',
+    type: 'action',
+    info: '🥵',
+  },
 
 
 

@@ -842,6 +842,28 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 7,
+    chapterId: 45,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '姑娘',
+    },
+    nextResponseId: 71,
+    nextChapterId: 46,
+  },
+  {
+    contactsId: 7,
+    chapterId: 46,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '依依姑娘！',
+    },
+    nextResponseId: 72,
+    nextChapterId: 38,
+  },
+  {
+    contactsId: 7,
     chapterId: 44,
     chatData: {
       contactsId: 7,
@@ -864,25 +886,14 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 7,
-    chapterId: 45,
+    chapterId: 48,
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '姑娘',
+      info: '',
     },
-    nextResponseId: 71,
-    nextChapterId: 46,
-  },
-  {
-    contactsId: 7,
-    chapterId: 46,
-    chatData: {
-      contactsId: 7,
-      type: 'my',
-      info: '依依姑娘！',
-    },
-    nextResponseId: 72,
-    nextChapterId: 38,
+    nextResponseId: 73,
+    nextChapterId: 48,
   },
 // 48
 ];
