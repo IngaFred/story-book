@@ -30,8 +30,10 @@ export default function Chat() {
     setChatPageByIndex(_index, {
       badge: 0,
     });
-    scrollToBottom();
   }, []);
+  useEffect(() => {
+    scrollToBottom();
+  }, [chatPageList]);
 
   /**
    * 滚动到底部
@@ -61,7 +63,6 @@ export default function Chat() {
               type: 'my',
               ...item?.chatData,
             });
-            scrollToBottom();
             setTimeout(() => {
               resolve(1);
             }, 1500);
@@ -78,7 +79,6 @@ export default function Chat() {
             }) => {
               console.log('chatId', chatId);
               const callback = new Promise((resolve, reject) => {
-                scrollToBottom();
                 setTimeout(() => {
                   resolve(1);
                 }, 1500);
@@ -96,7 +96,6 @@ export default function Chat() {
                 pushChatListById(chatPageId, responseInfo);
               }
               return new Promise((resolve, reject) => {
-                scrollToBottom();
                 setTimeout(() => {
                   resolve(
                     addChats({
