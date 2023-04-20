@@ -757,7 +757,7 @@ const allActionList: ActionItem[] = [
       time: '',
     },
     type: 'disabled'
-    // nextChapterId: 40
+    // nextChapterId: 44
   },
   {
     contactsId: 7,
@@ -890,7 +890,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '(闭上眼睛，右手掌猛地托住依依的后脑，左手拦腰拥住，人更贴近！)',
+      info: '(闭上眼睛，右手掌猛地托住依依的后脑，左手拦腰拥住，人更贴近！👩‍❤️‍👨)',
     },
     nextResponseId: 76,
     nextChapterId: 49,
@@ -901,7 +901,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '(不知过了多久，感觉身上越来越热，慢慢睁开了眼睛)',
+      info: '(不知过了多久，感觉身上越来越热，慢慢睁开了眼睛 👀)',
     },
     nextResponseId: 79,
     nextChapterId: 50,
@@ -912,7 +912,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '我忍不住了 啊！！(野兽般低沉的吼叫)',
+      info: '我忍不住了 啊！！(发出野兽般低沉的吼叫🔞)',
     },
     nextResponseId: 81,
     nextChapterId: 51,
@@ -923,7 +923,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '(抬起右手，猛地将肚兜掀开，露出一抹诱人沟壑)',
+      info: '(抬起右手，猛地将肚兜掀开，露出一抹诱人沟壑 🈲)',
     },
     nextChapterId: 52,
   },
@@ -933,7 +933,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '(看着面前那道诱人沟壑，眼神变得炙热起来，慢慢低下头，将嘴唇印在上面)',
+      info: '(看着面前那道诱人沟壑，眼神变得炙热起来，慢慢低下头，将嘴唇印在上面 👄)',
     },
     nextResponseId: 83,
     nextChapterId: 53,
@@ -944,7 +944,7 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '啊~~嗷！',
+      info: '🥵 啊~~嗷！💦',
     },
     nextResponseId: 89,
     nextChapterId: 54,
@@ -957,6 +957,7 @@ const allActionList: ActionItem[] = [
       type: 'my',
       info: '...！！！！！！',
     },
+    nextResponseId: 99,
     nextChapterId: 55,
   },
   {
@@ -965,9 +966,10 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '(一个暴跳起来！立马给依依披上外衣遮住，然后自己拉条裤衩 在那位怒目婆婆的注视下，一动不动！)',
+      info: '(一个暴跳💥💥💥起来！立马给依依披上外衣遮住，然后自己拉条裤衩 在那位怒目婆婆的注视下，一动不动！)',
     },
     nextResponseId: 94,
+    // 施工。。。
     nextChapterId: 38,
   },
 ];

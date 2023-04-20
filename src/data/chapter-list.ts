@@ -220,7 +220,7 @@ export const chapterTree: ChapterTreeItem[] = [
       },
       {
         id: 9,
-        name: '【依依的老母亲】',
+        name: '【依依的老母亲】 👵',
         area: '如意楼 后楼',
       },
     ],

@@ -296,7 +296,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 1,
     name: '王溟',
     type: 'chat',
-    info: '哈去！ 哎哟喂，是那个小兔崽子，在骂我。别给我逮到嗷，不然有你好果子吃',
+    info: '哈去！ 哎哟喂，是哪个小兔崽子，在骂我。别给我逮到嗷，不然有你好果子吃',
     nextResponseId: 39,
   },
   {
@@ -520,7 +520,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(慢慢伸出手，抚摸着布脱脱那棱角分明、富有肌肉感的脸庞，脸上露出一抹痴迷，可人的红唇吞吐着热气，慢慢靠近)',
+    info: '(慢慢伸出手，抚摸着布脱脱那棱角分明、富有肌肉感的脸庞，脸上露出一抹痴迷，可人的红唇💋吞吐着热气，慢慢靠近)',
     nextResponseId: 70
   },
   {
@@ -558,7 +558,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(唇边传来一阵温热，下意识地闭上了眼睛)',
+    info: '(唇边💋传来一阵温热，下意识地闭上了眼睛)',
     nextResponseId: 75
   },
   {
@@ -566,14 +566,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'action',
-    info: '🥵',
+    info: '💗',
   },
   {
     id: 76,
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(突然，感觉自己身体变得轻飘飘，仿佛置身于云端，浑身上下说不出来的舒服)',
+    info: '(突然，感觉自己身体变得轻飘飘☁️ ，仿佛置身于云端，浑身上下说不出来的舒服)',
     nextResponseId: 77
   },
   {
@@ -581,7 +581,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(闭上眼睛，跟随着本能，静静享受着这种奇妙感觉)',
+    info: '(闭上眼睛，跟随着本能👅，静静享受着这种奇妙感觉)',
     nextResponseId: 78
   },
   {
@@ -589,14 +589,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'action',
-    info: '😚',
+    info: '💞',
   },
   {
     id: 79,
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(二人几乎同时对视，看到布脱脱那双深邃迷人、充满柔情蜜意的双眼，心中不禁又是一阵悸动) 😍',
+    info: '(二人几乎同时对视👀，看到布脱脱那双深邃迷人、充满柔情蜜意的双眼，心中不禁又是一阵悸动) 😍',
     nextResponseId: 98
   },
   {
@@ -604,7 +604,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(慢慢抬起右手，放在布脱脱胸口处，感受到那强有力跳动，脸上露出一抹满足笑容)',
+    info: '(慢慢抬起右手，放在布脱脱胸口处，感受到那强有力跳动，脸上露出一抹满足笑容 🥰)',
     nextResponseId: 80
   },
   {
@@ -612,14 +612,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(突然，一股强有力的\'气流\'从手掌心传入体内，酥酥麻麻，紧接着便感到浑身燥热，小腹下处更是传来一阵强烈欲望)',
+    info: '(突然，一股强有力的\'气流\'从手掌心传入体内，酥酥麻麻，紧接着便感到浑身燥热🥵，小腹下处更是传来一阵强烈欲望💓)',
   },
   {
     id: 81,
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(感觉身体仿佛被火烧一般，下意识伸手解开衣服。)',
+    info: '(感觉身体仿佛被火烧一般，下意识伸手解开衣服 👗)',
     nextResponseId: 82
   },
   {
@@ -627,7 +627,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(很快，身上便只剩下一件赤红色肚兜，露出大片雪白肌肤)',
+    info: '(很快，身上便只剩下一件赤红色肚兜🩱，露出大片雪白肌肤)',
+    nextResponseId: 100
+  },
+  {
+    id: 100,
+    contactsId: 7,
+    type: 'action',
+    info: '❤️‍🔥',
   },
   {
     id: 83,
@@ -642,7 +649,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'action',
-    info: '🥵',
+    info: '👩‍❤️‍👨',
     nextResponseId: 85
   },
   {
@@ -664,7 +671,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(紧紧抱住对方，将脑袋埋进对方怀里，享受着这美妙时刻！ 声浪也在这空旷密林，此起彼伏 )',
+    info: '(紧紧抱住对方，将脑袋埋进对方怀里，享受着这美妙时刻！ 声浪也在这空旷密林，此起彼伏 👏)',
+    nextResponseId: 101
+  },
+  {
+    id: 101,
+    contactsId: 7,
+    type: 'action',
+    info: '💕',
     nextResponseId: 88
   },
   {
@@ -672,14 +686,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(感受到身体传来阵阵酥麻，顿时感到一阵空虚乏力，忍不住大口喘气~)',
+    info: '(感受到身体传来阵阵酥麻，顿时感到一阵空虚乏力，忍不住大口喘气~💨)',
   },
   {
     id: 89,
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '(抬起头，看向布脱脱，只见对方此时正双眼迷离，满脸通红，呼吸急促，失了智一般)',
+    info: '(抬起头，看向布脱脱，只见对方此时正双眼迷离，满脸通红，呼吸急促，失了智一般 ❤️‍🔥)',
     nextResponseId: 90
   },
   {
@@ -692,15 +706,15 @@ const allChatList: ChatItemProps[] = [
   {
     id: 91,
     contactsId: 9,
-    name: '依依的老母亲',
+    name: '依依的老母亲 👵',
     type: 'chat',
-    info: '呔！😱 呔！😱 呔！😱',
+    info: '👁️ 👁️ ⚡ 呔！😱 呔！😱 呔！😱',
     nextResponseId: 92
   },
   {
     id: 92,
     contactsId: 9,
-    name: '依依的老母亲',
+    name: '依依的老母亲 👵',
     type: 'chat',
     info: '你个下贱的杂役！！！',
     nextResponseId: 93
@@ -717,7 +731,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '( 瞬间清醒过来，慌乱中扯些衣物在身上。看到布脱脱正站在自己身边，只穿着一件贴身小裤衩，似被雷劈了一般！)',
+    info: '( 瞬间清醒过来，慌乱中扯些衣物在身上。看到布脱脱正站在自己身边，只穿着一件贴身小裤衩，似被雷劈了一般！⚡)',
     nextResponseId: 95
   },
   {
@@ -725,7 +739,7 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '依依',
     type: 'chat',
-    info: '( 脸颊红得仿佛要滴出血来，不敢抬头看母亲，低头，只见自己身无寸缕，下身早已泥泞不堪！)',
+    info: '( 脸颊红得仿佛要滴出血来，不敢抬头看母亲，低头，只见自己身无寸缕㊙️，下身早已泥泞不堪！)',
     nextResponseId: 96
   },
   {
@@ -742,8 +756,14 @@ const allChatList: ChatItemProps[] = [
     type: 'action',
     info: '啪嗒啪嗒...不一会儿，又有一群人抬着轿子，进入林中',
   },
-  // 99
-
+  {
+    id: 99,
+    contactsId: 7,
+    name: '我',
+    type: 'action',
+    info: '🌩️',
+  },
+// 101
 
 
 
