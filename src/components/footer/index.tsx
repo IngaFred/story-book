@@ -42,7 +42,9 @@ function Footer(props: FooterProps) {
   const navigate = useNavigate();
   const handleFooter = (path?: string) => {
     if (!path) {
-      Toast.show('暂未开放,敬请期待');
+      Toast.show({
+        content: '暂未开放，敬请期待',
+      });
       return;
     }
     navigate(path);

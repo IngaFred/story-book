@@ -5,8 +5,8 @@ import './utils/rem';
 import { Suspense } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import router from './router';
+import './index.css';
 import './assets/styles/reset.scss';
-
 import '@/assets/styles/variables.scss';
 
 const root = ReactDOM.createRoot(
