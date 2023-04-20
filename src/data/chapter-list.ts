@@ -118,6 +118,7 @@ export const chapterTree: ChapterTreeItem[] = [
         id: 1,
         name: '主线',
         area: '如意楼',
+        badge: 1,
         chatList: [
           {
             id: 12,
@@ -137,6 +138,7 @@ export const chapterTree: ChapterTreeItem[] = [
         id: 1,
         name: '主线',
         area: '如意楼',
+        badge: 2,
         chatList: [
           {
             id: 13,
@@ -163,6 +165,7 @@ export const chapterTree: ChapterTreeItem[] = [
         id: 1,
         name: '主线',
         area: '如意楼',
+        badge: 1,
         chatList: [
           {
             id: 15,
