@@ -3,6 +3,7 @@ import ListItem from '@/components/list-item';
 import styles from './index.module.scss';
 import { MailFill, MessageFill, SmileFill, StarFill } from 'antd-mobile-icons';
 import { useNavigate } from 'react-router-dom';
+import { Toast } from 'antd-mobile';
 
 export interface FooterProps {}
 
@@ -14,32 +15,36 @@ function Footer(props: FooterProps) {
   interface Footer {
     name: string;
     icon: any;
-    path: string;
+    path?: string;
   }
   const footers: Footer[] = [
     {
       name: '聊天',
-      icon: <MessageFill style={{fontSize: '1.3rem'}} />,
+      icon: <MessageFill style={{ fontSize: '1.3rem' }} />,
       path: '/home',
     },
     {
       name: '物品',
-      icon: <MailFill style={{fontSize: '1.3rem'}} />,
-      path: '/itemBars',
+      icon: <MailFill style={{ fontSize: '1.3rem' }} />,
+      // path: '/itemBars',
     },
     {
       name: '地图',
-      icon: <StarFill style={{fontSize: '1.3rem'}} />,
-      path: '/home',
+      icon: <StarFill style={{ fontSize: '1.3rem' }} />,
+      // path: '/home',
     },
     {
       name: '角色',
-      icon: <SmileFill style={{fontSize: '1.3rem'}} />,
-      path: '/myself',
+      icon: <SmileFill style={{ fontSize: '1.3rem' }} />,
+      // path: '/myself',
     },
   ];
   const navigate = useNavigate();
-  const handleFooter = (path: string) => {
+  const handleFooter = (path?: string) => {
+    if (!path) {
+      Toast.show('暂未开放,敬请期待');
+      return;
+    }
     navigate(path);
   };
   return (
