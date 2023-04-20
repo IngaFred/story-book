@@ -624,8 +624,10 @@ const allActionList: ActionItem[] = [
       info: '天色暗下来了，啥也看不到了，回去干饭吧🥣',
       time: '',
     },
-    nextChapterId: 28,
+    nextChapterId: -1,
   },
+
+
   // 神话的开启
   {
     contactsId: 7,
@@ -753,11 +755,11 @@ const allActionList: ActionItem[] = [
     chatData: {
       contactsId: 7,
       type: 'my',
-      info: '正在构思美美的爱情故事',
+      info: '正在构思',
       time: '',
     },
     type: 'disabled'
-    // nextChapterId: 44
+    // nextChapterId: 
   },
   {
     contactsId: 7,
@@ -969,9 +971,80 @@ const allActionList: ActionItem[] = [
       info: '(一个暴跳💥💥💥起来！立马给依依披上外衣遮住，然后自己拉条裤衩 在那位怒目婆婆的注视下，一动不动！)',
     },
     nextResponseId: 94,
-    // 施工。。。
+    nextChapterId: 56,
+  },
+  {
+    contactsId: 7,
+    chapterId: 56,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(我看着婆婆那双眼睛，里面充满了绝望，痛苦，还有一丝哀求) 👁️👁️',
+    },
+    nextResponseId: 102,
+    nextChapterId: 57,
+  },
+  // --
+  {
+    contactsId: 7,
+    chapterId: 56,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '老人家，您听我解释！ 事情不是您想的那样！😧',
+    },
+    nextResponseId: 94,
+    //
     nextChapterId: 38,
   },
+  // ---
+  {
+    contactsId: 7,
+    chapterId: 56,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '丈母娘！事情已经发生了，我们要接受现实！😦',
+    },
+    nextResponseId: 94,
+    //
+    nextChapterId: 38,
+  },
+  {
+    contactsId: 7,
+    chapterId: 57,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(看着昏倒在一旁的依依，声音颤抖着)婆婆，我求您了，先送依依回家去吧，可..可别落下什么病根..路上我任您处置..',
+    },
+    nextResponseId: 105,
+    nextChapterId: 58,
+  },
+  {
+    contactsId: 7,
+    chapterId: 58,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '我求您了！！！(扑通一下)',
+    },
+    nextResponseId: 106,
+    nextChapterId: 59,
+  },
+  {
+    contactsId: 7,
+    chapterId: 59,
+    chatData: {
+      contactsId: 7,
+      type: 'action',
+      info: '这两巴掌，大力的让我脸颊疼的几乎麻木，嘴角也缓缓的渗出了一抹殷红，耳朵一阵一阵的轰鸣。突然！胸腔内凹，瞬间感觉到剧烈的疼痛，不能吸气！我躺在地上用力捂着胸口，眼球发颤，意识模糊！',
+    },
+    nextResponseId: 110,
+    nextChapterId: 38,
+  },
+  // chapterId: 59,nextChapterId: 60
+
 ];
 
 export const defaultActionList: ActionItem[] = [

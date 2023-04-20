@@ -747,14 +747,14 @@ const allChatList: ChatItemProps[] = [
     contactsId: 7,
     name: '扈扈',
     type: 'chat',
-    info: '啊啊啊啊啊啊！😱',
+    info: '啊啊啊啊啊啊！😨',
     nextResponseId: 97
   },
   {
     id: 97,
     contactsId: 9,
     type: 'action',
-    info: '啪嗒啪嗒...不一会儿，又有一群人抬着轿子，进入林中',
+    info: '啪嗒啪嗒...这时，又有一群人抬着轿子，进入林中',
   },
   {
     id: 99,
@@ -763,8 +763,89 @@ const allChatList: ChatItemProps[] = [
     type: 'action',
     info: '🌩️',
   },
-// 101
-
+  {
+    id: 102,
+    contactsId: 7,
+    name: '依依',
+    type: 'chat',
+    info: '(用力抬起头看着布拖拖和母亲，瞪大地双眼止不住地流淌下眼泪来，这一刹间，无数情绪如洪水般泄出)',
+    nextResponseId: 103
+  },
+  {
+    id: 103,
+    contactsId: 7,
+    name: '依依',
+    type: 'action',
+    info: '本就孱弱的依依，遭到如此剧烈的身心冲击⚡，两眼一翻，晕倒在旁',
+    nextResponseId: 104
+  },
+  {
+    id: 104,
+    contactsId: 7,
+    name: '扈扈',
+    type: 'chat',
+    info: '大小姐！(冲上去搀扶着依依，并迅速地为她穿衣敝体)',
+  },
+  {
+    id: 105,
+    contactsId: 7,
+    name: '依依的老母亲 👵',
+    type: 'chat',
+    info: '(看着昏倒在地的女儿，又看了一眼衣衫不整，站在一旁的布拖拖，心里一阵绞痛)',
+  },
+  {
+    id: 106,
+    contactsId: 7,
+    type: 'action',
+    info: '十几米开外，一众随从，于惊讶中缓来，开始议论纷纷',
+    nextResponseId: 107
+  },
+  {
+    id: 107,
+    contactsId: 7,
+    name: '依依的老母亲 👵',
+    type: 'chat',
+    info: '都给我闭嘴！(回头呵斥下人)',
+    nextResponseId: 108
+  },
+  {
+    id: 108,
+    contactsId: 7,
+    name: '依依的老母亲',
+    type: 'action',
+    info: '😡',
+    nextResponseId: 109
+  },
+  {
+    id: 109,
+    contactsId: 7,
+    name: '依依的老母亲 👵',
+    type: 'chat',
+    info: '(大步走向布拖拖，扬起手，呼哧！甩在他脸上，啪！啪！！) 贱种！给我滚一边去！滚！(对准胸部，狠狠地踹了一脚！)',
+  },
+  {
+    id: 110,
+    contactsId: 7,
+    name: '依依的老母亲 👵',
+    type: 'chat',
+    info: '(蹲下身靠近依依，眼神中那熊熊怒火慢慢熄灭，尽是疼惜与懊悔) 你个傻丫头..唉..',
+    nextResponseId: 111
+  },
+  {
+    id: 111,
+    contactsId: 7,
+    name: '依依的老母亲 👵',
+    type: 'chat',
+    info: '来人，把轿子抬过来。(扭头看向布拖拖，眼神顿时凌厉)给我把这个贱种，用绳子绑住，拖回去！',
+    nextResponseId: 112
+  },
+  {
+    id: 112,
+    contactsId: 7,
+    type: 'action',
+    info: '我被两个壮汉，一路拖着，踹着。跟在轿子后面，来到了依依府上',
+  },
+  // 113
 
 
 
