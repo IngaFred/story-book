@@ -544,6 +544,13 @@ const allChatList: ChatItemProps[] = [
     type: 'chat',
     info: '(听到布脱脱喊自己，心中一慌，连忙抬起头，用那双水汪汪的大眼睛盯着对方)',
   },
+  // {
+  //   id: 72,
+  //   contactsId: 8,
+  //   name: '依依',
+  //   type: 'chat',
+  //   info: '(感受到唇边传来一阵温热，呼吸也变得急促起来，下意识地闭上眼睛，勾在脖子上的手)',
+  // },
 
 
 

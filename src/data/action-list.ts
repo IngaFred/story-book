@@ -842,6 +842,28 @@ const allActionList: ActionItem[] = [
   },
   {
     contactsId: 7,
+    chapterId: 44,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(看着依依)',
+    },
+    nextResponseId: 69,
+    nextChapterId: 45,
+  },
+  {
+    contactsId: 7,
+    chapterId: 47,
+    chatData: {
+      contactsId: 7,
+      type: 'my',
+      info: '(心脏狂跳，头脑混乱，身体不自觉地下压，相互靠近)',
+    },
+    nextResponseId: 73,
+    nextChapterId: 48,
+  },
+  {
+    contactsId: 7,
     chapterId: 45,
     chatData: {
       contactsId: 7,
@@ -860,9 +882,9 @@ const allActionList: ActionItem[] = [
       info: '依依姑娘！',
     },
     nextResponseId: 72,
-    nextChapterId: 47,
+    nextChapterId: 38,
   },
-
+// 48
 ];
 
 export const defaultActionList: ActionItem[] = [
