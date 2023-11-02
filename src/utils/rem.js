@@ -5,7 +5,10 @@ function setRem() {
   let htmlDom = document.querySelector('html');
   htmlDom.style.fontSize = htmlWidth / 20 + 'px';
 }
+// 初始化
 setRem();
+// 改变窗口大小时重新设置REM
 window.onresize = function () {
   setRem();
 };
+

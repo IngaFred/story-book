@@ -16,6 +16,9 @@ const ItemBars = lazy(() => import('@/views/item/itemBars'));
 const ItemDetails = lazy(() => import('@/views/item/itemDetails'));
 const Chat = lazy(() => import('@/views/chat'));
 const Myself = lazy(() => import('@/views/myself'));
+const My = lazy(() => import('@/views/my'));
+const Edit = lazy(()=> import('@/views/edit'))
+const Login = lazy(()=> import('@/views/login'))
 
 export const routes: RouteObject[] = [
   {
@@ -61,6 +64,18 @@ export const routes: RouteObject[] = [
   {
     path: '/myself',
     element: <Myself />,
+  },
+  {
+    path: '/edit',
+    element: <Edit />,
+  },
+  {
+    path: '/my',
+    element: <My />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
   },
 ];
 

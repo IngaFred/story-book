@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from '@/components/list-item';
 import styles from './index.module.scss';
-import { MailFill, MessageFill, SmileFill, StarFill } from 'antd-mobile-icons';
+import { MailFill, MessageFill, SmileFill, StarFill, EditFill } from 'antd-mobile-icons';
 import { useNavigate } from 'react-router-dom';
 import { Toast } from 'antd-mobile';
 
@@ -20,23 +20,29 @@ function Footer(props: FooterProps) {
   const footers: Footer[] = [
     {
       name: '聊天',
-      icon: <MessageFill style={{ fontSize: '1.3rem' }} />,
+      icon: <MessageFill style={{ fontSize: '1.4rem' }} />,
       path: '/home',
     },
     {
       name: '物品',
-      icon: <MailFill style={{ fontSize: '1.3rem' }} />,
-      // path: '/itemBars',
+      icon: <MailFill style={{ fontSize: '1.4rem' }} />,
+      path: '/itemBars',
     },
     {
-      name: '地图',
-      icon: <StarFill style={{ fontSize: '1.3rem' }} />,
+      name: '创建',
+      icon: <EditFill style={{ fontSize: '1.4rem' }} />,
       // path: '/home',
+      path: '/edit',
     },
     {
       name: '角色',
-      icon: <SmileFill style={{ fontSize: '1.3rem' }} />,
-      // path: '/myself',
+      icon: <StarFill style={{ fontSize: '1.4rem' }} />,
+      path: '/myself',
+    },
+    {
+      name: '我的',
+      icon: <SmileFill style={{ fontSize: '1.4rem' }} />,
+      path: '/my',
     },
   ];
   const navigate = useNavigate();
