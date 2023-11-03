@@ -28,7 +28,7 @@ function Header({ title }: HeaderProps) {
 					</span>
 				}
 				right={
-					!['/chapters', '/book', '/storyBack', '/charactersSelection', '/charactersDetails'].includes(location.pathname) &&
+					!['/chapters', '/book', '/storyBack', '/charactersSelection', '/charactersDetails', '/login'].includes(location.pathname) &&
 					<span
 						onClick={() => {
 							navigate('/chapters');
